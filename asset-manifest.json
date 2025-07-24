@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/unik-design-tokens/static/css/main.482b612f.css",
-    "main.js": "/unik-design-tokens/static/js/main.2f4ab3db.js",
-    "static/js/453.1a5d72ae.chunk.js": "/unik-design-tokens/static/js/453.1a5d72ae.chunk.js",
-    "index.html": "/unik-design-tokens/index.html",
-    "main.482b612f.css.map": "/unik-design-tokens/static/css/main.482b612f.css.map",
-    "main.2f4ab3db.js.map": "/unik-design-tokens/static/js/main.2f4ab3db.js.map",
-    "453.1a5d72ae.chunk.js.map": "/unik-design-tokens/static/js/453.1a5d72ae.chunk.js.map"
+    "main.css": "/static/css/main.482b612f.css",
+    "main.js": "/static/js/main.6433a8c9.js",
+    "static/js/453.1a5d72ae.chunk.js": "/static/js/453.1a5d72ae.chunk.js",
+    "index.html": "/index.html",
+    "main.482b612f.css.map": "/static/css/main.482b612f.css.map",
+    "main.6433a8c9.js.map": "/static/js/main.6433a8c9.js.map",
+    "453.1a5d72ae.chunk.js.map": "/static/js/453.1a5d72ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.482b612f.css",
-    "static/js/main.2f4ab3db.js"
+    "static/js/main.6433a8c9.js"
   ]
 }
