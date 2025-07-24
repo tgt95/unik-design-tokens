@@ -1,0 +1,271 @@
+{
+  "spacing": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": "0"
+    },
+    "xs-4": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "2"
+    },
+    "xs-3": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "4"
+    },
+    "xs-2": {
+      "$type": "dimension",
+      "$value": "6px"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "8"
+    },
+    "sm-2": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "12"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "16"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "32px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": "40"
+    },
+    "xl-2": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "48"
+    },
+    "xl-3": {
+      "$type": "dimension",
+      "$value": "56px"
+    },
+    "xl-4": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "64"
+    },
+    "xl-5": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": "80"
+    },
+    "xl-6": {
+      "$type": "dimension",
+      "$value": "96px",
+      "$description": "96"
+    },
+    "xl-7": {
+      "$type": "dimension",
+      "$value": "128px",
+      "$description": "96"
+    }
+  },
+  "size": {
+    "xs-3": {
+      "$type": "dimension",
+      "$value": "10px",
+      "$description": "10"
+    },
+    "xs-2": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "12"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": "14px",
+      "$description": "14"
+    },
+    "sm-4": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "16"
+    },
+    "sm-3": {
+      "$type": "dimension",
+      "$value": "18px",
+      "$description": "18"
+    },
+    "sm-2": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": "20"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "22px",
+      "$description": "22"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "24"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "32"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": "40"
+    },
+    "xl-2": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "48"
+    },
+    "xl-3": {
+      "$type": "dimension",
+      "$value": "56px",
+      "$description": "56"
+    },
+    "xl-4": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": "64"
+    },
+    "xl-5": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": "80"
+    },
+    "xl-6": {
+      "$type": "dimension",
+      "$value": "96px",
+      "$description": "96"
+    }
+  },
+  "rounded": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": "0"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": "2"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "4"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "6px",
+      "$description": "6"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "8"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "12"
+    },
+    "xl-2": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "16"
+    },
+    "xl-3": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": "24"
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "9999px"
+    }
+  },
+  "screen": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "640px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "768px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "1024px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "1280px"
+    },
+    "xl-2": {
+      "$type": "dimension",
+      "$value": "1440px"
+    },
+    "xl-3": {
+      "$type": "dimension",
+      "$value": "1536px"
+    }
+  },
+  "column": {
+    "xl": {
+      "$type": "dimension",
+      "$value": "1128px",
+      "$description": "Equal to 12 columns"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "936px",
+      "$description": "Equal to 10 columns in 12 columns"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "744px",
+      "$description": "Equal to 8 columns in 12 columns"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": "552px",
+      "$description": "Equal to 6 columns in 12 columns"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$value": "456px",
+      "$description": "Equal to 5 columns in 12 columns"
+    },
+    "xs-2": {
+      "$type": "dimension",
+      "$value": "360px",
+      "$description": "Equal to 4 columns in 12 columns"
+    },
+    "xs-3": {
+      "$type": "dimension",
+      "$value": "264px",
+      "$description": "Equal to 3 columns in 12 columns"
+    },
+    "xs-4": {
+      "$type": "dimension",
+      "$value": "168px",
+      "$description": "Equal to 2 columns in 12 columns"
+    }
+  }
+}

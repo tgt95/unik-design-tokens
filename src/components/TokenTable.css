@@ -1,0 +1,31 @@
+.token-table .table-scroll {
+  overflow-x: auto;
+}
+
+.token-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.token-table th,
+.token-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.token-table th {
+  background: #f9f9f9;
+  font-weight: 600;
+}
+
+/* Folder row styling */
+.folder-row td {
+  background: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+.folder-label {
+  margin-left: 4px;
+  vertical-align: middle;
+}
