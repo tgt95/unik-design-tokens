@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Github pages: [https://tgt95.github.io/unik-design-tokens](https://tgt95.github.io/unik-design-tokens)
+
+
 ## Available Scripts
 
 In the project directory, you can run:

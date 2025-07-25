@@ -414,10 +414,6 @@
         "$type": "dimension",
         "$value": "{rounded.lg}"
       },
-      "md": {
-        "$type": "dimension",
-        "$value": "{rounded.lg}"
-      },
       "focus-ring": {
         "lg": {
           "$type": "dimension",
@@ -439,6 +435,10 @@
           "$type": "dimension",
           "$value": "7px"
         }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{rounded.lg}"
       },
       "sm": {
         "$type": "dimension",

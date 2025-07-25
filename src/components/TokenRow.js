@@ -1,186 +1,129 @@
 // src/components/TokenRow.js
-import React from 'react'
+import React, { useState } from 'react'
 import './TokenRow.css'
 
-export default function TokenRow({ tokenName, modes = {}, depth = 0 }) {
+export default function TokenRow({
+  tokenName,
+  modes = {},
+  depth = 0,
+  collection,
+}) {
+  const [copiedKey, setCopiedKey] = useState(null)
   const modeNames = Object.keys(modes)
 
-  // pull description from the first mode that has one
+  // first non-empty description
   const description =
     modeNames
-      .map(m => modes[m][tokenName]?.description)
+      .map((m) => modes[m][tokenName]?.description)
       .find(Boolean) || ''
 
-  // Given a mode and starting tokenName, follow aliasChain/value
-  // until you land on a non-braced string (e.g. a hex), returning the full chain.
-  // function getFullChain(mode, startName) {
-  //   const chain = []
-  //   const seen = new Set()
-
-  //   let current = startName
-  //   while (current && !seen.has(current)) {
-  //     seen.add(current)
-  //     const tk = modes[mode][current]
-  //     if (!tk) break
-
-  //     const aliasChain = tk.aliasChain || []
-  //     if (aliasChain.length) {
-  //       // push each alias step
-  //       aliasChain.forEach(a => chain.push(a))
-  //       // look at the last alias—if it’s a braced token, follow it
-  //       const last = aliasChain[aliasChain.length - 1]
-  //       const m = last.match(/^\{(.+)\}$/)
-  //       if (m) {
-  //         current = m[1]
-  //         continue
-  //       }
-  //     }
-
-  //     // no aliasChain (or last alias was not a token), fall back to tk.value or tk.resolved
-  //     const raw = tk.resolved ?? tk.value
-  //     if (raw) {
-  //       chain.push(raw)
-  //     }
-  //     break
-  //   }
-
-  //   return chain
-  // }
-
-
-  // function getFullChain(mode, startName) {
-  //   const chain = [];
-  //   const seen = new Set();
-
-  //   let current = startName;
-  //   while (current && !seen.has(current)) {
-  //     seen.add(current);
-  //     const tk = modes[mode][current];
-  //     if (!tk) break;
-
-  //     const aliasChain = tk.aliasChain || [];
-  //     if (aliasChain.length) {
-  //       aliasChain.forEach(a => chain.push(a));
-  //       const last = aliasChain[aliasChain.length - 1];
-  //       const m = last.match(/^\{(.+)\}$/);
-  //       if (m) {
-  //         current = m[1];
-  //         continue;
-  //       }
-  //     }
-
-  //     const raw = tk.resolved ?? tk.value;
-  //     if (raw) {
-  //       chain.push(raw);
-  //     }
-  //     break;
-  //   }
-
-  //   // ** New: remove a trailing duplicate if the last two items match **
-  //   if (chain.length >= 2 && chain[chain.length - 1] === chain[chain.length - 2]) {
-  //     chain.pop();
-  //   }
-
-  //   return chain;
-  // }
-
-
+  // build the alias/value chain (unchanged)
   function getFullChain(mode, startName) {
-    const chain = [];
-    const seen = new Set();
+    const chain = []
+    const seen = new Set()
+    let current = startName
 
-    let current = startName;
     while (current && !seen.has(current)) {
-      seen.add(current);
-      const tk = modes[mode][current];
-      if (!tk) break;
+      seen.add(current)
+      const tk = modes[mode][current]
+      if (!tk) break
 
-      const aliasChain = tk.aliasChain || [];
+      const aliasChain = tk.aliasChain || []
       if (aliasChain.length) {
-        aliasChain.forEach(a => chain.push(a));
-        const last = aliasChain[aliasChain.length - 1];
-        const m = last.match(/^\{(.+)\}$/);
+        aliasChain.forEach((a) => chain.push(a))
+        const last = aliasChain[aliasChain.length - 1]
+        const m = last.match(/^\{(.+)\}$/)
         if (m) {
-          current = m[1];
-          continue;
+          current = m[1]
+          continue
         }
       }
 
-      const raw = tk.resolved ?? tk.value;
-      if (raw) {
-        chain.push(raw);
-      }
-      break;
+      const raw = tk.resolved ?? tk.value
+      if (raw) chain.push(raw)
+      break
     }
 
-    // dedupe trailing duplicates
-    if (chain.length >= 2 && chain[chain.length - 1] === chain[chain.length - 2]) {
-      chain.pop();
+    if (
+      chain.length >= 2 &&
+      chain[chain.length - 1] === chain[chain.length - 2]
+    ) {
+      chain.pop()
     }
 
-    // —— NEW: post-process the final entry for px/rem or font-weight labels
+    // px→rem or font-weight
     if (chain.length) {
-      const last = chain[chain.length - 1];
-
-      // 1) px → rem
-      const pxMatch = last.match(/^(\d+(?:\.\d+)?)px$/);
+      const last = chain[chain.length - 1]
+      const pxMatch = last.match(/^(\d+(?:\.\d+)?)px$/)
       if (pxMatch) {
-        const px = parseFloat(pxMatch[1]);
-        const rem = (px / 16).toFixed(2);
-        chain[chain.length - 1] = `${px}px —— ${rem}rem`;
-
+        const px = parseFloat(pxMatch[1])
+        chain[chain.length - 1] = `${px}px — ${(px / 16).toFixed(2)}rem`
       } else {
-        // 2) font-weight → common name
         const weightMap = {
-          '100': 'Thin (Hairline)',
-          '200': 'Extra Light (Ultra Light)',
-          '300': 'Light',
-          '400': 'Normal (Regular)',
-          '500': 'Medium',
-          '600': 'Semi Bold (Demi Bold)',
-          '700': 'Bold',
-          '800': 'Extra Bold (Ultra Bold)',
-          '900': 'Black (Heavy)',
-          '950': 'Extra Black (Ultra Black)',
-        };
+          100: 'Thin (Hairline)',
+          200: 'Extra Light (Ultra Light)',
+          300: 'Light',
+          400: 'Normal (Regular)',
+          500: 'Medium',
+          600: 'Semi Bold (Demi Bold)',
+          700: 'Bold',
+          800: 'Extra Bold (Ultra Bold)',
+          900: 'Black (Heavy)',
+          950: 'Extra Black (Ultra Black)',
+        }
         if (weightMap[last]) {
-          chain[chain.length - 1] = `${last} —— ${weightMap[last]}`;
+          chain[chain.length - 1] = `${last} — ${weightMap[last]}`
         }
       }
     }
 
-    return chain;
+    return chain
   }
 
+  // generic copy + tooltip
+  function handleCopy(text, key) {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopiedKey(key)
+      setTimeout(() => setCopiedKey(null), 1000)
+    })
+  }
 
-
+  // copy just the tokenName
+  const nameKey = `name-${tokenName}`
+  function copyTokenName() {
+    handleCopy(tokenName, nameKey)
+  }
 
   return (
-    <tr id={tokenName}>
-      {/* Name column with tree indent */}
+    <tr id={`${collection}-${tokenName}`} className="token-row">
+      {/* Name cell */}
       <td
         className="tree-cell"
         style={{
           '--depth': depth,
-          paddingLeft: `${8 + depth * 16 + 16}px`
+          paddingLeft: `${8 + depth * 16 + 16}px`,
         }}
       >
-        {tokenName}
+        <span
+          className="name-token"
+          onClick={copyTokenName}
+          title="Click to copy token name"
+        >
+          {tokenName}
+          {copiedKey === nameKey && (
+            <span className="copy-tooltip">Copied!</span>
+          )}
+        </span>
       </td>
 
-      {modeNames.map(mode => {
-        // build the full alias/value chain for this mode & token
+      {modeNames.map((mode) => {
         const fullChain = getFullChain(mode, tokenName)
-
-        // first element might be a pure hex; we'll show swatch only for the last
         const final = fullChain[fullChain.length - 1]
-        const showSwatch = /^#/.test(final)
 
         return (
           <React.Fragment key={mode}>
-            {/* Preview swatch */}
             <td>
-              {showSwatch ? (
+              {/^.*/.test(final) && /^#/.test(final) ? (
                 <span
                   className="color-box"
                   style={{ backgroundColor: final }}
@@ -190,26 +133,68 @@ export default function TokenRow({ tokenName, modes = {}, depth = 0 }) {
                 '—'
               )}
             </td>
-
-            {/* Alias & Value stack */}
             <td className="alias-stack">
-              {fullChain.map((item, i) => (
-                <React.Fragment key={i}>
-                  <div className="alias-token">{item}</div>
-                  {/* show arrow if not last */}
-                  {i < fullChain.length - 1 && (
-                    <div className="alias-arrow">↓</div>
-                  )}
-                </React.Fragment>
-              ))}
+              {fullChain.flatMap((item, i) => {
+                const isLast = i === fullChain.length - 1
+                const key = `${tokenName}-${mode}-${i}`
+
+                // px/rem split
+                if (isLast && item.includes(' — ')) {
+                  const [px, rem] = item.split(' — ')
+                  const pxKey = `${key}-px`
+                  const remKey = `${key}-rem`
+                  return [
+                    <React.Fragment key={pxKey}>
+                      <div
+                        className="alias-token"
+                        onClick={() => handleCopy(px, pxKey)}
+                        style={{ cursor: 'pointer', position: 'relative' }}
+                      >
+                        {px}
+                        {copiedKey === pxKey && (
+                          <span className="copy-tooltip">Copied!</span>
+                        )}
+                      </div>
+                      <div className="alias-arrow">↓</div>
+                    </React.Fragment>,
+                    <React.Fragment key={remKey}>
+                      <div
+                        className="alias-token"
+                        onClick={() => handleCopy(rem, remKey)}
+                        style={{ cursor: 'pointer', position: 'relative' }}
+                      >
+                        {rem}
+                        {copiedKey === remKey && (
+                          <span className="copy-tooltip">Copied!</span>
+                        )}
+                      </div>
+                    </React.Fragment>,
+                  ]
+                }
+
+                // normal
+                return (
+                  <React.Fragment key={key}>
+                    <div
+                      className="alias-token"
+                      onClick={() => handleCopy(item, key)}
+                      style={{ cursor: 'pointer', position: 'relative' }}
+                    >
+                      {item}
+                      {copiedKey === key && (
+                        <span className="copy-tooltip">Copied!</span>
+                      )}
+                    </div>
+                    {!isLast && <div className="alias-arrow">↓</div>}
+                  </React.Fragment>
+                )
+              })}
             </td>
           </React.Fragment>
         )
       })}
 
-      {/* Description column */}
       <td>{description}</td>
     </tr>
   )
 }
-

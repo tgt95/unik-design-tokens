@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 260px;
+  width: 216px;
   overflow-y: auto;
   background: #fafafa;
   border-right: 1px solid #ddd;
@@ -30,3 +30,4 @@
 .sidebar li a:hover {
   text-decoration: underline;
 }
+

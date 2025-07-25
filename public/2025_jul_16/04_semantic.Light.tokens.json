@@ -427,33 +427,31 @@
         "$value": "{bg.selected.disabled.on-light}",
         "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
       },
-      "bolder": {
+      "bold": {
         "rest": {
           "$type": "color",
-          "$value": "{bg.selected.bolder.rest.on-light}",
-          "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
-        }
-      },
-      "boldest": {
-        "rest": {
-          "$type": "color",
-          "$value": "{bg.selected.boldest.rest.on-light}",
+          "$value": "{bg.selected.bold.rest.on-light}",
           "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
         },
         "hover": {
           "$type": "color",
-          "$value": "{bg.selected.boldest.hover.on-light}",
+          "$value": "{bg.selected.bold.hover.on-light}",
           "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{bg.selected.boldest.pressed.on-light}",
+          "$value": "{bg.selected.bold.pressed.on-light}",
           "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bg.selected.boldest.disabled.on-light}",
+          "$value": "{bg.selected.bold.disabled.on-light}",
           "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
+        },
+        "disabled-strong": {
+          "$type": "color",
+          "$value": "{bg.selected.bold.disabled.strong.on-light}",
+          "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
         }
       }
     },
@@ -736,7 +734,7 @@
     },
     "btn-primary-disabled": {
       "$type": "color",
-      "$value": "{fg.btn.primary.disabled.on-light}"
+      "$value": "{fg.btn.primary.disabled--on-light}"
     },
     "checkbox": {
       "$type": "color",
@@ -744,7 +742,7 @@
     },
     "checkbox-disabled": {
       "$type": "color",
-      "$value": "{fg.checkbox.disabled-on-light}"
+      "$value": "{fg.checkbox.disabled--on-light}"
     },
     "selected": {
       "rest": {
@@ -763,13 +761,11 @@
         "$type": "color",
         "$value": "{fg.selected.disabled.on-light}"
       },
-      "subtle": {
-        "$type": "color",
-        "$value": "{fg.selected.subtle.on-light}"
-      },
       "bold": {
-        "$type": "color",
-        "$value": "{fg.selected.bold.on-light}"
+        "rest": {
+          "$type": "color",
+          "$value": "{fg.selected.bold.on-light}"
+        }
       }
     }
   },
@@ -779,24 +775,14 @@
     "$description": "Divide, Line, Border"
   },
   "border": {
-    "indicator": {
-      "$type": "color",
-      "$value": "{border.indicator.on-light}",
-      "$description": "Card Border"
-    },
-    "indicator-disabled": {
-      "$type": "color",
-      "$value": "{border.indicator.disabled.on-light}",
-      "$description": "Card Border"
-    },
     "selected": {
       "$type": "color",
-      "$value": "{border.selected.secondary.on-light}",
+      "$value": "{border.selected.on-light}",
       "$description": "Card Border"
     },
     "selected-disabled": {
       "$type": "color",
-      "$value": "{border.selected.secondary.disabled.on-light}",
+      "$value": "{border.selected.disabled.on-light}",
       "$description": "Card Border"
     },
     "segment-control": {

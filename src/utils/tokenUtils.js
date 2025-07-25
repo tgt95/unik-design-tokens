@@ -105,3 +105,26 @@ export function getAliasChain(initialValue, flatTokens) {
 
   return chain;
 }
+
+/**
+ * Build a nested tree from dot-separated token names,
+ * preserving the exact order of the incoming `tokenNames` array.
+ */
+export function buildTree(tokenNames) {
+  const root = {};
+  tokenNames.forEach(fullName => {
+    const parts = fullName.split('.');
+    let node = root;
+    parts.forEach((part, i) => {
+      if (!node[part]) {
+        node[part] = {
+          name: part,
+          fullPath: parts.slice(0, i + 1).join('.'),
+          children: {}
+        };
+      }
+      node = node[part].children;
+    });
+  });
+  return root;
+}

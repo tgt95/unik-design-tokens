@@ -1,6 +1,6 @@
 {
   "name": "figma-token-viewer",
-  "homepage": "https://tgt95.github.io/unik-design-tokens",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
