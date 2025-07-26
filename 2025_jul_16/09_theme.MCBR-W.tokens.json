@@ -3,11 +3,11 @@
     "family": {
       "primary": {
         "$type": "string",
-        "$value": "Plus Jakarta Sans"
+        "$value": "Open Sans"
       },
       "secondary": {
         "$type": "string",
-        "$value": "Saira Condensed"
+        "$value": "Open Sans"
       }
     }
   },
@@ -16,48 +16,48 @@
       "rest": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.800}",
+          "$value": "{orange.600}",
           "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.400}",
+          "$value": "{orange.400}",
           "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
         }
       },
       "hover": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.700}",
+          "$value": "{orange.700}",
           "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.500}",
+          "$value": "{orange.300}",
           "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
         }
       },
       "pressed": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.900}",
+          "$value": "{orange.800}",
           "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.300}",
+          "$value": "{orange.700}",
           "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
         }
       },
       "disabled": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.200}",
+          "$value": "{orange.200}",
           "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.800}",
+          "$value": "{orange.900}",
           "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
         }
       },
@@ -65,48 +65,48 @@
         "rest": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.200}",
+            "$value": "{orange.100}",
             "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.800}",
+            "$value": "{orange.900}",
             "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
           }
         },
         "hover": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.300}",
+            "$value": "{orange.200}",
             "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.800}",
+            "$value": "{orange.800}",
             "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
           }
         },
         "pressed": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.300}",
+            "$value": "{orange.300}",
             "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.950}",
+            "$value": "{orange.950}",
             "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
           }
         },
         "disabled": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.200}",
+            "$value": "{orange.100}",
             "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.800}",
+            "$value": "{orange.900}",
             "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
           }
         }
@@ -116,112 +116,108 @@
       "rest": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.100}",
+          "$value": "{orange.100}",
           "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.900}",
+          "$value": "{orange.900}",
           "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
         }
       },
       "hover": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.200}",
+          "$value": "{orange.200}",
           "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.500}",
+          "$value": "{orange.800}",
           "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
         }
       },
       "pressed": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.300}",
+          "$value": "{orange.300}",
           "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.700}",
+          "$value": "{orange.950}",
           "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
         }
       },
       "disabled": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.100}",
+          "$value": "{orange.100}",
           "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.600}",
+          "$value": "{orange.900}",
           "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
         }
       },
-      "bolder": {
+      "bold": {
         "rest": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.200}",
-            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
-          },
-          "on-dark": {
-            "$type": "color",
-            "$value": "{green.900}",
-            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
-          }
-        }
-      },
-      "boldest": {
-        "rest": {
-          "on-light": {
-            "$type": "color",
-            "$value": "{green.800}",
+            "$value": "{orange.600}",
             "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.400}",
+            "$value": "{orange.400}",
             "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
           }
         },
         "hover": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.800}",
+            "$value": "{orange.700}",
             "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.300}",
+            "$value": "{orange.300}",
             "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
           }
         },
         "pressed": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.800}",
+            "$value": "{orange.800}",
             "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.700}",
+            "$value": "{orange.700}",
             "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
           }
         },
         "disabled": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.600}",
+            "$value": "{orange.50}",
             "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.950}",
+            "$value": "{orange.950}",
             "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
+          },
+          "strong": {
+            "on-light": {
+              "$type": "color",
+              "$value": "{orange.100}"
+            },
+            "on-dark": {
+              "$type": "color",
+              "$value": "{orange.900}"
+            }
           }
         }
       }
@@ -237,20 +233,18 @@
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{neutral.950}",
+          "$value": "{neutral.900}",
           "$description": "Text, Icon of Primary Button"
         },
-        "disabled": {
-          "on-light": {
-            "$type": "color",
-            "$value": "{green.400}",
-            "$description": "Text, Icon of Primary Button (Disabled)"
-          },
-          "on-dark": {
-            "$type": "color",
-            "$value": "{green.700}",
-            "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
-          }
+        "disabled--on-light": {
+          "$type": "color",
+          "$value": "{orange.300}",
+          "$description": "Text, Icon of Primary Button (Disabled)"
+        },
+        "disabled--on-dark": {
+          "$type": "color",
+          "$value": "{orange.700}",
+          "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
         }
       }
     },
@@ -262,17 +256,17 @@
       },
       "on-dark": {
         "$type": "color",
-        "$value": "{green.800}",
+        "$value": "{neutral.900}",
         "$description": "Checkmark of checkbox"
       },
-      "disabled-on-light": {
+      "disabled--on-light": {
         "$type": "color",
         "$value": "{white}",
         "$description": "Text, Icon of Primary Button (Disabled)"
       },
-      "disabled-on-dark": {
+      "disabled--on-dark": {
         "$type": "color",
-        "$value": "{green.800}",
+        "$value": "{neutral.900}",
         "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
       }
     },
@@ -280,70 +274,70 @@
       "rest": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.600}"
+          "$value": "{orange.600}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.400}"
+          "$value": "{orange.400}"
         },
         "strong": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.800}"
+            "$value": "{orange.800}"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.300}"
+            "$value": "{orange.300}"
           }
         }
       },
       "hover": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.500}"
+          "$value": "{orange.500}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.500}"
+          "$value": "{orange.500}"
         }
       },
       "pressed": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.700}"
+          "$value": "{orange.700}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.300}"
+          "$value": "{orange.300}"
         },
         "strong": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.800}"
+            "$value": "{orange.800}"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.400}"
+            "$value": "{orange.400}"
           }
         }
       },
       "disabled": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.400}"
+          "$value": "{orange.300}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.700}"
+          "$value": "{orange.700}"
         },
         "strong": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.100}"
+            "$value": "{orange.100}"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.800}"
+            "$value": "{orange.900}"
           }
         }
       }
@@ -352,71 +346,61 @@
       "rest": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.800}"
+          "$value": "{orange.600}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.400}"
+          "$value": "{orange.400}"
         }
       },
       "hover": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.700}"
+          "$value": "{orange.500}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.500}"
+          "$value": "{orange.500}"
         }
       },
       "pressed": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.900}"
+          "$value": "{orange.700}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.300}"
-        }
-      },
-      "strong": {
-        "on-light": {
-          "$type": "color",
-          "$value": "{green.950}"
+          "$value": "{orange.300}"
         },
-        "on-dark": {
-          "$type": "color",
-          "$value": "{green.400}"
+        "strong": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{orange.800}"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{orange.400}"
+          }
         }
       },
       "disabled": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.400}"
+          "$value": "{orange.300}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.700}"
+          "$value": "{orange.700}"
         },
         "strong": {
           "on-light": {
             "$type": "color",
-            "$value": "{green.300}"
+            "$value": "{orange.100}"
           },
           "on-dark": {
             "$type": "color",
-            "$value": "{green.600}"
+            "$value": "{orange.900}"
           }
-        }
-      },
-      "subtle": {
-        "on-light": {
-          "$type": "color",
-          "$value": "{green.800}"
-        },
-        "on-dark": {
-          "$type": "color",
-          "$value": "{green.400}"
         }
       },
       "bold": {
@@ -426,97 +410,75 @@
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.900}"
+          "$value": "{neutral.900}"
         }
       }
     }
   },
   "border": {
-    "indicator": {
-      "on-light": {
-        "$type": "color",
-        "$value": "{green.700}"
-      },
-      "on-dark": {
-        "$type": "color",
-        "$value": "{green.400}"
-      },
-      "disabled": {
-        "on-light": {
-          "$type": "color",
-          "$value": "{green.300}"
-        },
-        "on-dark": {
-          "$type": "color",
-          "$value": "{green.700}"
-        }
-      }
-    },
     "input": {
       "active": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.800}",
-          "$description": ""
+          "$value": "{orange.600}",
+          "$description": "Component: Segment control"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.400}",
-          "$description": ""
+          "$value": "{orange.400}",
+          "$description": "Component: Segment control"
         }
       }
     },
     "selected": {
-      "secondary": {
+      "on-light": {
+        "$type": "color",
+        "$value": "{orange.600}",
+        "$description": "Component: Segment control"
+      },
+      "on-dark": {
+        "$type": "color",
+        "$value": "{orange.400}",
+        "$description": "Component: Segment control"
+      },
+      "disabled": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.800}",
-          "$description": ""
+          "$value": "{orange.300}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.400}",
-          "$description": ""
-        },
-        "disabled": {
-          "on-light": {
-            "$type": "color",
-            "$value": "{green.300}"
-          },
-          "on-dark": {
-            "$type": "color",
-            "$value": "{green.50}"
-          }
+          "$value": "{orange.700}"
         }
       }
     },
     "active": {
       "on-light": {
         "$type": "color",
-        "$value": "{green.600}"
+        "$value": "{orange.600}"
       },
       "on-dark": {
         "$type": "color",
-        "$value": "{green.400}"
+        "$value": "{orange.400}"
       },
       "strong": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.800}"
+          "$value": "{orange.800}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.300}"
+          "$value": "{orange.300}"
         }
       },
       "light": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.300}"
+          "$value": "{orange.300}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.700}"
+          "$value": "{orange.700}"
         }
       }
     }
@@ -524,13 +486,23 @@
   "focus-ring": {
     "on-light": {
       "$type": "color",
-      "$value": "{green.800}",
-      "$description": ""
+      "$value": "{orange.600}",
+      "$description": "Component: Segment control"
     },
     "on-dark": {
       "$type": "color",
-      "$value": "{green.400}",
-      "$description": ""
+      "$value": "{orange.400}",
+      "$description": "Component: Segment control"
+    }
+  },
+  "_bg-brand-disabled-strong": {
+    "on-light": {
+      "$type": "color",
+      "$value": "{orange.200}"
+    },
+    "on-dark": {
+      "$type": "color",
+      "$value": "{orange.900}"
     }
   }
 }

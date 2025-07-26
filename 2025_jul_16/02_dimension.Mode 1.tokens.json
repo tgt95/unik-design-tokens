@@ -36,13 +36,11 @@
     },
     "md": {
       "$type": "dimension",
-      "$value": "24px",
-      "$description": "24"
+      "$value": "24px"
     },
     "lg": {
       "$type": "dimension",
-      "$value": "32px",
-      "$description": "32"
+      "$value": "32px"
     },
     "xl": {
       "$type": "dimension",
@@ -185,7 +183,7 @@
     "xl": {
       "$type": "dimension",
       "$value": "12px",
-      "$description": "12px, Card, Dialog/Modal"
+      "$description": "12"
     },
     "xl-2": {
       "$type": "dimension",
