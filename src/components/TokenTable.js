@@ -1,4 +1,3 @@
-// src/components/TokenTable.js
 import React, { useState } from 'react';
 import TokenRow from './TokenRow';
 import './TokenTable.css';
@@ -25,26 +24,37 @@ function buildTree(tokenNames) {
   return root;
 }
 
-export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
-  const modeNames = Object.keys(modes);
+export default function TokenTable({
+  title,
+  modes = {},
+  keyOrder = [],
+  filterMode = 'All',
+}) {
+  // your full list of available modes for this collection
+  const allModes = Object.keys(modes);
+
+  // decide which modes to actually show
+  const displayedModes =
+    filterMode === 'All'
+      ? allModes
+      : allModes.includes(filterMode)
+      ? [filterMode]
+      : [];
+
   const [collapsed, setCollapsed] = useState(new Set());
   const [copiedFolder, setCopiedFolder] = useState(null);
 
-  // **Use the keyOrder passed from App** instead of sorting ourselves
-  const sortedKeys = keyOrder;
-  const tree = buildTree(sortedKeys);
+  // Build tree from the DFS keyOrder you passed in
+  const tree = buildTree(keyOrder);
 
-  // toggle folder open/closed
   function toggleNode(path) {
     setCollapsed(prev => {
       const next = new Set(prev);
-      if (next.has(path)) next.delete(path);
-      else next.add(path);
+      next.has(path) ? next.delete(path) : next.add(path);
       return next;
     });
   }
 
-  // copy folder ID + show tooltip
   function copyFolder(fullId) {
     navigator.clipboard.writeText(fullId).then(() => {
       setCopiedFolder(fullId);
@@ -56,15 +66,18 @@ export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
     const childrenArr = Object.values(node.children);
     const hasChildren = childrenArr.length > 0;
     const isLeaf =
-      !hasChildren && modeNames.some(m => modes[m][node.fullPath] !== undefined);
+      !hasChildren &&
+      allModes.some(m => modes[m][node.fullPath] !== undefined);
+
     if (!hasChildren && !isLeaf) return null;
 
-    // a stable, namespaced id for scrolling / copy
     const fullId = `${title}-${node.fullPath}`;
 
+    // ── Folder Row ───────────────────────────────────────────────────────
     if (hasChildren) {
       const isCollapsed = collapsed.has(node.fullPath);
       const indentPx = 8 + depth * 16 + 16;
+
       return (
         <React.Fragment key={node.fullPath}>
           <tr className="folder-row" id={fullId}>
@@ -89,7 +102,8 @@ export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
                 )}
               </span>
             </td>
-            {modeNames.map(m => (
+            {/* render empty placeholders for each displayed mode */}
+            {displayedModes.map(m => (
               <React.Fragment key={m}>
                 <td colSpan={2} />
               </React.Fragment>
@@ -102,7 +116,15 @@ export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
       );
     }
 
-    // leaf row
+    // ── Leaf Row ─────────────────────────────────────────────────────────
+    // If filtering a specific mode, and this leaf doesn't exist there, skip it
+    if (
+      filterMode !== 'All' &&
+      !modes[filterMode]?.[node.fullPath]
+    ) {
+      return null;
+    }
+
     return (
       <TokenRow
         key={node.fullPath}
@@ -110,6 +132,8 @@ export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
         modes={modes}
         depth={depth}
         collection={title}
+        // let TokenRow know which mode(s) we're showing
+        displayedModes={displayedModes}
       />
     );
   }
@@ -121,7 +145,7 @@ export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
           <thead>
             <tr>
               <th>Name</th>
-              {modeNames.map(m => (
+              {displayedModes.map(m => (
                 <th key={m} colSpan={2}>
                   {m}
                 </th>
@@ -130,7 +154,7 @@ export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
             </tr>
             <tr>
               <th />
-              {modeNames.map(m => (
+              {displayedModes.map(m => (
                 <th key={m + '_alias'} colSpan={2}>
                   Alias &amp; Value
                 </th>
@@ -138,7 +162,11 @@ export default function TokenTable({ title, modes = {}, keyOrder = [] }) {
               <th />
             </tr>
           </thead>
-          <tbody>{Object.values(tree).map(n => renderNode(n, 0))}</tbody>
+          <tbody>
+            {Object.values(tree).map(rootNode =>
+              renderNode(rootNode, 0)
+            )}
+          </tbody>
         </table>
       </div>
     </div>

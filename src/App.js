@@ -117,9 +117,10 @@ export default function App() {
     });
   }, [sortedTables]);
 
+  console.log('Outline:', outline);
   return (
     <div className="layout">
-      <Sidebar items={outline} />
+      <Sidebar items={outline} name='Token list' />
       <main className="content">
         <div className="app">
           <h1>🎨 Design Tokens Viewer</h1>

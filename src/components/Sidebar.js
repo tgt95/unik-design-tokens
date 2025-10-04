@@ -2,7 +2,7 @@
 import React from 'react'
 import './Sidebar.css'
 
-export default function Sidebar({ items }) {
+export default function Sidebar({ items, name='Table of contents' }) {
   // your existing smooth‐scroll handler
   function handleClick(e, id) {
     e.preventDefault()
@@ -13,7 +13,7 @@ export default function Sidebar({ items }) {
 
   return (
     <nav className="sidebar">
-      <h2>Outline</h2>
+      <h2>{name}</h2>
       <ul>
         {items.map(node => (
           <SidebarNode

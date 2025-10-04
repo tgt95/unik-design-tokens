@@ -456,13 +456,11 @@
       "active": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.800}",
-          "$description": ""
+          "$value": "{green.700}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.400}",
-          "$description": ""
+          "$value": "{green.400}"
         }
       }
     },
@@ -470,13 +468,11 @@
       "secondary": {
         "on-light": {
           "$type": "color",
-          "$value": "{green.800}",
-          "$description": ""
+          "$value": "{green.800}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{green.400}",
-          "$description": ""
+          "$value": "{green.400}"
         },
         "disabled": {
           "on-light": {
@@ -493,7 +489,7 @@
     "active": {
       "on-light": {
         "$type": "color",
-        "$value": "{green.600}"
+        "$value": "{green.700}"
       },
       "on-dark": {
         "$type": "color",
@@ -524,13 +520,11 @@
   "focus-ring": {
     "on-light": {
       "$type": "color",
-      "$value": "{green.800}",
-      "$description": ""
+      "$value": "{green.700}"
     },
     "on-dark": {
       "$type": "color",
-      "$value": "{green.400}",
-      "$description": ""
+      "$value": "{green.400}"
     }
   }
 }
