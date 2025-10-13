@@ -1,0 +1,540 @@
+{
+  "font": {
+    "family": {
+      "primary": {
+        "$type": "string",
+        "$value": "Poppins"
+      },
+      "secondary": {
+        "$type": "string",
+        "$value": "Poppins"
+      }
+    }
+  },
+  "bg": {
+    "brand": {
+      "rest": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.600}",
+          "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.400}",
+          "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
+        }
+      },
+      "hover": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.700}",
+          "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.300}",
+          "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
+        }
+      },
+      "pressed": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.800}",
+          "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.700}",
+          "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
+        }
+      },
+      "disabled": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.300}",
+          "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.900}",
+          "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
+        }
+      },
+      "subtle": {
+        "rest": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.200}",
+            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.900}",
+            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
+          }
+        },
+        "hover": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.300}",
+            "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.800}",
+            "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
+          }
+        },
+        "pressed": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.400}",
+            "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.950}",
+            "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
+          }
+        },
+        "disabled": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.200}",
+            "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.900}",
+            "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
+          }
+        }
+      }
+    },
+    "selected": {
+      "rest": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.200}",
+          "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.950}",
+          "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
+        }
+      },
+      "hover": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.300}",
+          "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.900}",
+          "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
+        }
+      },
+      "pressed": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.400}",
+          "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.800}",
+          "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
+        }
+      },
+      "disabled": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.200}",
+          "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.950}",
+          "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
+        }
+      },
+      "bolder": {
+        "rest": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.300}",
+            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.900}",
+            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
+          }
+        }
+      },
+      "boldest": {
+        "rest": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.600}",
+            "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.400}",
+            "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
+          }
+        },
+        "hover": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.700}",
+            "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.300}",
+            "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
+          }
+        },
+        "pressed": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.800}",
+            "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.700}",
+            "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
+          }
+        },
+        "disabled": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.300}",
+            "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.900}",
+            "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
+          }
+        }
+      }
+    }
+  },
+  "fg": {
+    "btn": {
+      "primary": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.950}",
+          "$description": "Text, Icon of Primary Button"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{neutral.900}",
+          "$description": "Text, Icon of Primary Button"
+        },
+        "disabled": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{neutral.400}",
+            "$description": "Text, Icon of Primary Button (Disabled)"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.800}",
+            "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
+          }
+        }
+      }
+    },
+    "checkbox": {
+      "on-light": {
+        "$type": "color",
+        "$value": "{neutral.950}",
+        "$description": "Checkmark of checkbox"
+      },
+      "on-dark": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Checkmark of checkbox"
+      },
+      "disabled-on-light": {
+        "$type": "color",
+        "$value": "{neutral.400}",
+        "$description": "Text, Icon of Primary Button (Disabled)"
+      },
+      "disabled-on-dark": {
+        "$type": "color",
+        "$value": "{neutral.900}",
+        "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
+      }
+    },
+    "brand": {
+      "rest": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.700}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.400}"
+        },
+        "strong": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.800}"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.500}"
+          }
+        }
+      },
+      "hover": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.500}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.500}"
+        }
+      },
+      "pressed": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.700}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.300}"
+        },
+        "strong": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.800}"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.400}"
+          }
+        }
+      },
+      "disabled": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.500}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.800}"
+        },
+        "strong": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{mcr.100}"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{mcr.900}"
+          }
+        }
+      }
+    },
+    "selected": {
+      "rest": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.900}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{white}"
+        }
+      },
+      "hover": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.800}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{white}"
+        }
+      },
+      "pressed": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.950}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{white}"
+        }
+      },
+      "strong": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.950}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{white}"
+        }
+      },
+      "disabled": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.400}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{neutral.500}"
+        },
+        "strong": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{neutral.300}"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{neutral.600}"
+          }
+        }
+      },
+      "subtle": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.600}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{white}"
+        }
+      },
+      "bold": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{neutral.900}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{neutral.900}"
+        }
+      }
+    }
+  },
+  "border": {
+    "indicator": {
+      "on-light": {
+        "$type": "color",
+        "$value": "{mcr.700}"
+      },
+      "on-dark": {
+        "$type": "color",
+        "$value": "{mcr.400}"
+      },
+      "disabled": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.300}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.700}"
+        }
+      }
+    },
+    "input": {
+      "active": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.700}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.400}"
+        }
+      }
+    },
+    "selected": {
+      "on-light": {
+        "$type": "color",
+        "$value": "{mcr.700}"
+      },
+      "on-dark": {
+        "$type": "color",
+        "$value": "{mcr.400}"
+      },
+      "disabled": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.300}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.700}"
+        }
+      },
+      "boldest": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.600}",
+          "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.400}",
+          "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
+        }
+      }
+    },
+    "active": {
+      "on-light": {
+        "$type": "color",
+        "$value": "{mcr.700}"
+      },
+      "on-dark": {
+        "$type": "color",
+        "$value": "{mcr.400}"
+      },
+      "strong": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.800}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.500}"
+        }
+      },
+      "light": {
+        "on-light": {
+          "$type": "color",
+          "$value": "{mcr.300}"
+        },
+        "on-dark": {
+          "$type": "color",
+          "$value": "{mcr.700}"
+        }
+      }
+    }
+  },
+  "focus-ring": {
+    "on-light": {
+      "$type": "color",
+      "$value": "{mcr.700}"
+    },
+    "on-dark": {
+      "$type": "color",
+      "$value": "{mcr.400}"
+    }
+  }
+}
