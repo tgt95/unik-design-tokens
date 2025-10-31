@@ -1,7 +1,0 @@
-Changes:
-- Change mode name to neutral name (color_brand_1, color_brand_2, color_brand_3)
-- Make NLFC color to LearnAI color
-
-
-Note: color brand 1 is more dark, shifting nearly to shade 900
-
