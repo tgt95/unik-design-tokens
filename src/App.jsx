@@ -5,17 +5,17 @@ import TokenTable from './components/TokenTable';
 import Sidebar from './components/Sidebar';
 import './App.css';
 
-const apiUrl =
-  process.env.NODE_ENV === 'production'
-    ? process.env.REACT_APP_PROD_API_URL
-    : process.env.REACT_APP_DEV_API_URL;
+// const apiUrl =
+//   process.env.NODE_ENV === 'production'
+//     ? (process.env.REACT_APP_PROD_API_URL || '')
+//     : (process.env.REACT_APP_DEV_API_URL || '');
 
 export default function App() {
   const [tables, setTables] = useState([]);
 
   useEffect(() => {
     async function loadAll() {
-      const manifest = await (await fetch(`${apiUrl}/tokens/manifest.json`)).json();
+      const manifest = await (await fetch(`/tokens/manifest.json`)).json();
 
       // 1) Gather global files
       const allFiles = [
@@ -25,7 +25,7 @@ export default function App() {
 
       // 2) Fetch & flatten global tokens
       const globalData = await Promise.all(
-        allFiles.map(f => fetch(`${apiUrl}/tokens/${f}`).then(r => r.json()))
+        allFiles.map(f => fetch(`/tokens/${f}`).then(r => r.json()))
       );
       const globalFlat = flattenTokens(Object.assign({}, ...globalData));
 
@@ -35,7 +35,7 @@ export default function App() {
         const modes = {};
         for (const [modeName, files] of Object.entries(collection.modes)) {
           const localData = await Promise.all(
-            files.map(f => fetch(`${apiUrl}/tokens/${f}`).then(r => r.json()))
+            files.map(f => fetch(`/tokens/${f}`).then(r => r.json()))
           );
           const merged = Object.assign({}, ...localData);
           const flat = flattenTokens(merged, [], {

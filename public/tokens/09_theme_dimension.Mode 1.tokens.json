@@ -10,7 +10,7 @@
     },
     "rounded-item": {
       "$type": "dimension",
-      "$value": "{rounded.md}"
+      "$value": "{radius.md}"
     },
     "icon-size": {
       "$type": "dimension",
@@ -141,28 +141,28 @@
     "rounded": {
       "xl": {
         "$type": "dimension",
-        "$value": "{rounded.xl-2}"
+        "$value": "{radius.xl-2}"
       },
       "lg": {
         "$type": "dimension",
-        "$value": "{rounded.xl}",
+        "$value": "{radius.xl}",
         "$description": "Components are used: Card, Dialog, Bottom sheet"
       },
       "md": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "sm": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "xs": {
         "$type": "dimension",
-        "$value": "{rounded.sm}"
+        "$value": "{radius.sm}"
       },
       "xs-2": {
         "$type": "dimension",
-        "$value": "{rounded.sm}"
+        "$value": "{radius.sm}"
       }
     },
     "padding": {
@@ -209,7 +209,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.lg}"
+      "$value": "{radius.lg}"
     }
   },
   "input": {
@@ -286,15 +286,15 @@
     "rounded": {
       "lg": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "md": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "sm": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       }
     }
   },
@@ -352,15 +352,15 @@
     "rounded": {
       "full": {
         "$type": "dimension",
-        "$value": "{rounded.full}"
+        "$value": "{radius.full}"
       },
       "md": {
         "$type": "dimension",
-        "$value": "{rounded.md}"
+        "$value": "{radius.md}"
       },
       "sm": {
         "$type": "dimension",
-        "$value": "{rounded.sm}"
+        "$value": "{radius.sm}"
       }
     }
   },
@@ -412,7 +412,11 @@
     "rounded": {
       "lg": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{radius.lg}"
       },
       "focus-ring": {
         "lg": {
@@ -436,21 +440,17 @@
           "$value": "7px"
         }
       },
-      "md": {
-        "$type": "dimension",
-        "$value": "{rounded.lg}"
-      },
       "sm": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "xs": {
         "$type": "dimension",
-        "$value": "{rounded.sm}"
+        "$value": "{radius.sm}"
       },
       "xs-2": {
         "$type": "dimension",
-        "$value": "{rounded.sm}"
+        "$value": "{radius.sm}"
       }
     },
     "padding": {
@@ -555,7 +555,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.xl-2}"
+      "$value": "{radius.xl-2}"
     },
     "height-header-complex": {
       "$type": "dimension",
@@ -566,7 +566,7 @@
   "checkbox": {
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.sm}"
+      "$value": "{radius.sm}"
     },
     "rounded-focus-ring": {
       "$type": "dimension",
@@ -576,28 +576,28 @@
   "radio": {
     "rounded-focus-ring": {
       "$type": "dimension",
-      "$value": "{rounded.full}"
+      "$value": "{radius.full}"
     }
   },
   "toggle": {
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.full}"
+      "$value": "{radius.full}"
     },
     "rounded-focus-ring": {
       "$type": "dimension",
-      "$value": "{rounded.full}"
+      "$value": "{radius.full}"
     }
   },
   "segment-control": {
     "rounded": {
       "item": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "container": {
         "$type": "dimension",
-        "$value": "{rounded.xl}"
+        "$value": "{radius.xl}"
       }
     },
     "icon-size": {
@@ -656,7 +656,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.lg}"
+      "$value": "{radius.lg}"
     },
     "horizontal": {
       "$type": "dimension",
@@ -689,11 +689,11 @@
     "rounded": {
       "item": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "container": {
         "$type": "dimension",
-        "$value": "{rounded.xl}"
+        "$value": "{radius.xl}"
       }
     },
     "padding": {
@@ -751,7 +751,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.sm}"
+      "$value": "{radius.sm}"
     },
     "gap": {
       "$type": "dimension",
@@ -793,7 +793,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.lg}"
+      "$value": "{radius.lg}"
     },
     "rounded-focus-ring": {
       "$type": "dimension",
@@ -899,7 +899,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.full}"
+      "$value": "{radius.full}"
     }
   },
   "toast": {
@@ -923,7 +923,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.lg}"
+      "$value": "{radius.lg}"
     }
   },
   "popover": {
@@ -951,7 +951,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.lg}"
+      "$value": "{radius.lg}"
     }
   },
   "dialog": {
@@ -973,26 +973,26 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.xl-2}"
+      "$value": "{radius.xl-2}"
     }
   },
   "avatar": {
     "rounded": {
       "md": {
         "$type": "dimension",
-        "$value": "{rounded.lg}"
+        "$value": "{radius.lg}"
       },
       "sm": {
         "$type": "dimension",
-        "$value": "{rounded.sm}"
+        "$value": "{radius.sm}"
       },
       "xs": {
         "$type": "dimension",
-        "$value": "{rounded.xs}"
+        "$value": "{radius.xs}"
       },
       "full": {
         "$type": "dimension",
-        "$value": "{rounded.full}"
+        "$value": "{radius.full}"
       }
     }
   },
@@ -1005,7 +1005,7 @@
     },
     "rounded": {
       "$type": "dimension",
-      "$value": "{rounded.lg}"
+      "$value": "{radius.lg}"
     }
   }
 }

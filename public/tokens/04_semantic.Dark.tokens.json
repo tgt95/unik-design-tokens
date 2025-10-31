@@ -1,27 +1,27 @@
 {
   "bg": {
     "surface": {
-      "level-1": {
+      "1": {
         "$type": "color",
         "$value": "{neutral.950}",
         "$description": "The primary surface of application"
       },
-      "level-2": {
+      "2": {
         "$type": "color",
         "$value": "{neutral.900}",
         "$description": "The secondary surface of application (Lower contrast to make the higher level outstanding), it’s often group other UI elements  \n\nContainer background:\n→ Page that contains many card inside (Optional & depends on context of use) \n→ Card/Dialog(Modal) Body that contains many sub-cards inside it"
       },
-      "level-3": {
+      "3": {
         "$type": "color",
         "$value": "{neutral.800}",
         "$description": "Navigation elements (Header, Navigation, Sidebar), and other elements background such as:\n\nContainer background: \n→ Top navigation\n→ Sidebar\n→ Button Outline\n→ Chip Unselected\n→ Card Header, Body, Footer\n→ Dropdown container"
       },
-      "level-4": {
+      "4": {
         "$type": "color",
         "$value": "#000000a3",
         "$description": "The black blurry overlay that contains these elements/components above such as Dialog (Modal)"
       },
-      "level-5": {
+      "5": {
         "$type": "color",
         "$value": "{neutral.700}",
         "$description": "The highest surface of application (Overlay on the modal) of Floating elements such as Tooltip, Popover\n\nContainer background:  → Tooltip"
@@ -427,31 +427,33 @@
         "$value": "{bg.selected.disabled.on-dark}",
         "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
       },
-      "bold": {
+      "bolder": {
         "rest": {
           "$type": "color",
-          "$value": "{bg.selected.bold.rest.on-dark}",
+          "$value": "{bg.selected.bolder.rest.on-dark}",
+          "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
+        }
+      },
+      "boldest": {
+        "rest": {
+          "$type": "color",
+          "$value": "{bg.selected.boldest.rest.on-dark}",
           "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
         },
         "hover": {
           "$type": "color",
-          "$value": "{bg.selected.bold.hover.on-dark}",
+          "$value": "{bg.selected.boldest.hover.on-dark}",
           "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{bg.selected.bold.pressed.on-dark}",
+          "$value": "{bg.selected.boldest.pressed.on-dark}",
           "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bg.selected.bold.disabled.on-dark}",
+          "$value": "{bg.selected.boldest.disabled.on-dark}",
           "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
-        },
-        "disabled-strong": {
-          "$type": "color",
-          "$value": "{bg.selected.bold.disabled.strong.on-dark}",
-          "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
         }
       }
     },
@@ -543,6 +545,11 @@
       "$type": "color",
       "$value": "{neutral.800}",
       "$description": "Background container for Card components: Card Header, Card Body, Card Footer, and Accordion"
+    },
+    "snackbar": {
+      "$type": "color",
+      "$value": "{neutral.700}",
+      "$description": "Background container for Snackbar (Mobile) component"
     }
   },
   "fg": {
@@ -734,7 +741,7 @@
     },
     "btn-primary-disabled": {
       "$type": "color",
-      "$value": "{fg.btn.primary.disabled--on-dark}"
+      "$value": "{fg.btn.primary.disabled.on-dark}"
     },
     "checkbox": {
       "$type": "color",
@@ -742,7 +749,7 @@
     },
     "checkbox-disabled": {
       "$type": "color",
-      "$value": "{fg.checkbox.disabled--on-dark}"
+      "$value": "{fg.checkbox.disabled-on-dark}"
     },
     "selected": {
       "rest": {
@@ -761,11 +768,13 @@
         "$type": "color",
         "$value": "{fg.selected.disabled.on-dark}"
       },
+      "subtle": {
+        "$type": "color",
+        "$value": "{fg.selected.subtle.on-dark}"
+      },
       "bold": {
-        "rest": {
-          "$type": "color",
-          "$value": "{fg.selected.bold.on-dark}"
-        }
+        "$type": "color",
+        "$value": "{fg.selected.bold.on-dark}"
       }
     }
   },
@@ -775,9 +784,24 @@
     "$description": "Divide, Line, Border"
   },
   "border": {
+    "indicator": {
+      "$type": "color",
+      "$value": "{border.indicator.on-dark}",
+      "$description": "Card Border"
+    },
+    "indicator-disabled": {
+      "$type": "color",
+      "$value": "{border.indicator.disabled.on-dark}",
+      "$description": "Card Border"
+    },
     "selected": {
       "$type": "color",
       "$value": "{border.selected.on-dark}",
+      "$description": "Card Border"
+    },
+    "selected-boldest": {
+      "$type": "color",
+      "$value": "{border.selected.boldest.on-dark}",
       "$description": "Card Border"
     },
     "selected-disabled": {
