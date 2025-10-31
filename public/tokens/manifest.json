@@ -1,0 +1,97 @@
+{
+  "name": "Design Tokens",
+  "collections": {
+    "04_semantic": {
+      "modes": {
+        "light": [
+          "04_semantic.light.tokens.json"
+        ],
+        "dark": [
+          "04_semantic.dark.tokens.json"
+        ]
+      }
+    },
+    "00_color_primitive": {
+      "modes": {
+        "Mode 1": [
+          "00_color_primitive.Mode 1.tokens.json"
+        ]
+      }
+    },
+    "02_dimension": {
+      "modes": {
+        "Mode 1": [
+          "02_dimension.Mode 1.tokens.json"
+        ]
+      }
+    },
+    "09_theme_dimension": {
+      "modes": {
+        "Mode 1": [
+          "09_theme_dimension.Mode 1.tokens.json"
+        ]
+      }
+    },
+    "03_typography": {
+      "modes": {
+        "Mode 1": [
+          "03_typography.Mode 1.tokens.json"
+        ]
+      }
+    },
+    "05_elevation": {
+      "modes": {
+        "Value": [
+          "05_elevation.Value.tokens.json"
+        ]
+      }
+    },
+    "09_theme": {
+      "modes": {
+        "Unik": [
+          "09_theme.Unik.tokens.json"
+        ],
+        "brand_1": [
+          "09_theme.brand_1.tokens.json"
+        ],
+        "brand_2": [
+          "09_theme.brand_2.tokens.json"
+        ],
+        "brand_3": [
+          "09_theme.brand_3.tokens.json"
+        ]
+      }
+    },
+    "01_color_brand": {
+      "modes": {
+        "Mode 1": [
+          "01_color_brand.Mode 1.tokens.json"
+        ]
+      }
+    },
+    "09_theme_radius": {
+      "modes": {
+        "gentle": [
+          "09_theme_radius.gentle.tokens.json"
+        ],
+        "sharp": [
+          "09_theme_radius.sharp.tokens.json"
+        ],
+        "chubby": [
+          "09_theme_radius.chubby.tokens.json"
+        ]
+      }
+    }
+  },
+  "styles": {
+    "text": [
+      "text.styles.tokens.json"
+    ],
+    "effect": [
+      "effect.styles.tokens.json"
+    ],
+    "color": [
+      "color.styles.tokens.json"
+    ]
+  }
+}
