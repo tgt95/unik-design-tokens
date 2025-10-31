@@ -3,18 +3,18 @@
   "collections": {
     "04_semantic": {
       "modes": {
-        "Light": [
-          "04_semantic.Light.tokens.json"
+        "light": [
+          "04_semantic.light.tokens.json"
         ],
-        "Dark": [
-          "04_semantic.Dark.tokens.json"
+        "dark": [
+          "04_semantic.dark.tokens.json"
         ]
       }
     },
-    "00_primitive_color": {
+    "00_color_primitive": {
       "modes": {
         "Mode 1": [
-          "00_primitive_color.Mode 1.tokens.json"
+          "00_color_primitive.Mode 1.tokens.json"
         ]
       }
     },
@@ -41,8 +41,8 @@
     },
     "05_elevation": {
       "modes": {
-        "Light": [
-          "05_elevation.Light.tokens.json"
+        "Value": [
+          "05_elevation.Value.tokens.json"
         ]
       }
     },
@@ -57,8 +57,8 @@
         "MCBR-W": [
           "09_theme.MCBR-W.tokens.json"
         ],
-        "MCBR-M": [
-          "09_theme.MCBR-M.tokens.json"
+        "MCR-M": [
+          "09_theme.MCR-M.tokens.json"
         ]
       }
     },

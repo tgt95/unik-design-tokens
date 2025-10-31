@@ -1,0 +1,16 @@
+{
+  "4 Grid Mobile (2)": {
+    "$type": "grid",
+    "$value": [
+      {
+        "pattern": "columns",
+        "visible": true,
+        "alignment": "stretch",
+        "color": "#dedede14",
+        "gutterSize": "12px",
+        "count": 4,
+        "offset": "32px"
+      }
+    ]
+  }
+}

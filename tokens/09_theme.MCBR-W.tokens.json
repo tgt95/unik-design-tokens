@@ -161,21 +161,7 @@
           "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
         }
       },
-      "bolder": {
-        "rest": {
-          "on-light": {
-            "$type": "color",
-            "$value": "{orange.200}",
-            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
-          },
-          "on-dark": {
-            "$type": "color",
-            "$value": "{orange.900}",
-            "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
-          }
-        }
-      },
-      "boldest": {
+      "bold": {
         "rest": {
           "on-light": {
             "$type": "color",
@@ -222,6 +208,16 @@
             "$type": "color",
             "$value": "{orange.950}",
             "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
+          },
+          "strong": {
+            "on-light": {
+              "$type": "color",
+              "$value": "{orange.100}"
+            },
+            "on-dark": {
+              "$type": "color",
+              "$value": "{orange.900}"
+            }
           }
         }
       }
@@ -240,17 +236,15 @@
           "$value": "{neutral.900}",
           "$description": "Text, Icon of Primary Button"
         },
-        "disabled": {
-          "on-light": {
-            "$type": "color",
-            "$value": "{orange.300}",
-            "$description": "Text, Icon of Primary Button (Disabled)"
-          },
-          "on-dark": {
-            "$type": "color",
-            "$value": "{orange.700}",
-            "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
-          }
+        "disabled--on-light": {
+          "$type": "color",
+          "$value": "{orange.300}",
+          "$description": "Text, Icon of Primary Button (Disabled)"
+        },
+        "disabled--on-dark": {
+          "$type": "color",
+          "$value": "{orange.700}",
+          "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
         }
       }
     },
@@ -265,12 +259,12 @@
         "$value": "{neutral.900}",
         "$description": "Checkmark of checkbox"
       },
-      "disabled-on-light": {
+      "disabled--on-light": {
         "$type": "color",
         "$value": "{white}",
         "$description": "Text, Icon of Primary Button (Disabled)"
       },
-      "disabled-on-dark": {
+      "disabled--on-dark": {
         "$type": "color",
         "$value": "{neutral.900}",
         "$description": "Text, Icon of Primary Button (Disabled)y surfaces: Icon, Text Button"
@@ -377,16 +371,16 @@
         "on-dark": {
           "$type": "color",
           "$value": "{orange.300}"
-        }
-      },
-      "strong": {
-        "on-light": {
-          "$type": "color",
-          "$value": "{orange.800}"
         },
-        "on-dark": {
-          "$type": "color",
-          "$value": "{orange.400}"
+        "strong": {
+          "on-light": {
+            "$type": "color",
+            "$value": "{orange.800}"
+          },
+          "on-dark": {
+            "$type": "color",
+            "$value": "{orange.400}"
+          }
         }
       },
       "disabled": {
@@ -409,16 +403,6 @@
           }
         }
       },
-      "subtle": {
-        "on-light": {
-          "$type": "color",
-          "$value": "{orange.600}"
-        },
-        "on-dark": {
-          "$type": "color",
-          "$value": "{orange.400}"
-        }
-      },
       "bold": {
         "on-light": {
           "$type": "color",
@@ -432,26 +416,6 @@
     }
   },
   "border": {
-    "indicator": {
-      "on-light": {
-        "$type": "color",
-        "$value": "{orange.600}"
-      },
-      "on-dark": {
-        "$type": "color",
-        "$value": "{orange.400}"
-      },
-      "disabled": {
-        "on-light": {
-          "$type": "color",
-          "$value": "{orange.300}"
-        },
-        "on-dark": {
-          "$type": "color",
-          "$value": "{orange.700}"
-        }
-      }
-    },
     "input": {
       "active": {
         "on-light": {
@@ -467,26 +431,24 @@
       }
     },
     "selected": {
-      "secondary": {
+      "on-light": {
+        "$type": "color",
+        "$value": "{orange.600}",
+        "$description": "Component: Segment control"
+      },
+      "on-dark": {
+        "$type": "color",
+        "$value": "{orange.400}",
+        "$description": "Component: Segment control"
+      },
+      "disabled": {
         "on-light": {
           "$type": "color",
-          "$value": "{orange.600}",
-          "$description": "Component: Segment control"
+          "$value": "{orange.300}"
         },
         "on-dark": {
           "$type": "color",
-          "$value": "{orange.400}",
-          "$description": "Component: Segment control"
-        },
-        "disabled": {
-          "on-light": {
-            "$type": "color",
-            "$value": "{orange.300}"
-          },
-          "on-dark": {
-            "$type": "color",
-            "$value": "{orange.700}"
-          }
+          "$value": "{orange.700}"
         }
       }
     },
@@ -531,6 +493,16 @@
       "$type": "color",
       "$value": "{orange.400}",
       "$description": "Component: Segment control"
+    }
+  },
+  "_bg-brand-disabled-strong": {
+    "on-light": {
+      "$type": "color",
+      "$value": "{orange.200}"
+    },
+    "on-dark": {
+      "$type": "color",
+      "$value": "{orange.900}"
     }
   }
 }

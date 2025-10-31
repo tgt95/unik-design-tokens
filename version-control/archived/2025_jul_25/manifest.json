@@ -3,11 +3,11 @@
   "collections": {
     "04_semantic": {
       "modes": {
-        "Light": [
-          "04_semantic.Light.tokens.json"
+        "light": [
+          "04_semantic.light.tokens.json"
         ],
-        "Dark": [
-          "04_semantic.Dark.tokens.json"
+        "dark": [
+          "04_semantic.dark.tokens.json"
         ]
       }
     },

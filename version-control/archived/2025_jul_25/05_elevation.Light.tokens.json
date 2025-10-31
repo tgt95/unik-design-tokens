@@ -8,7 +8,7 @@
       "$type": "dimension",
       "$value": "1px"
     },
-    "blur": {
+    "Blur": {
       "$type": "dimension",
       "$value": "2px"
     },
@@ -30,7 +30,7 @@
       "$type": "dimension",
       "$value": "3px"
     },
-    "blur": {
+    "Blur": {
       "$type": "dimension",
       "$value": "4px"
     },
@@ -52,7 +52,7 @@
       "$type": "dimension",
       "$value": "3px"
     },
-    "blur": {
+    "Blur": {
       "$type": "dimension",
       "$value": "8px"
     },
@@ -74,7 +74,7 @@
       "$type": "dimension",
       "$value": "5px"
     },
-    "blur": {
+    "Blur": {
       "$type": "dimension",
       "$value": "12px"
     },
@@ -96,7 +96,7 @@
       "$type": "dimension",
       "$value": "5px"
     },
-    "blur": {
+    "Blur": {
       "$type": "dimension",
       "$value": "16px"
     },
@@ -118,7 +118,7 @@
       "$type": "dimension",
       "$value": "6px"
     },
-    "blur": {
+    "Blur": {
       "$type": "dimension",
       "$value": "24px"
     },
@@ -140,7 +140,7 @@
       "$type": "dimension",
       "$value": "6px"
     },
-    "blur": {
+    "Blur": {
       "$type": "dimension",
       "$value": "32px"
     },

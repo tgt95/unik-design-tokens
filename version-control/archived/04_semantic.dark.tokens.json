@@ -14,7 +14,7 @@
       "level-3": {
         "$type": "color",
         "$value": "{neutral.800}",
-        "$description": "Navigation elements (Header, Navigation, Sidebar), and other elements background such as:\n\nContainer background: \n→ Top navigation\n→ Sidebar\n→ Button Outline\n→ Chip Unselected\n→ Card Header, Body, Footer\n→ Dropdown container"
+        "$description": "Navigation elements (Header, Navigation, Sidebar), and other elements background such as:\n\nContainer background: \n→ Top navigation\n→ Sidebar\n→ Button Outline\n→ Chip Unselected → Card Header, Body, Footer → Dropdown container"
       },
       "level-4": {
         "$type": "color",
@@ -41,7 +41,7 @@
       "rest": {
         "$type": "color",
         "$value": "{neutral.600}",
-        "$description": "Background (bg) Neutral – Rest\n\nContainer background: \n→ Avatar Initials generic icon, and text\n→ Date picker Item (Default, Past & Future) – Hover\n→ Dropdown Item – Hover\n→ Pagination Item – Hover\n→ Sidebar Item – Hover\n→ Tab Item – Hover"
+        "$description": "Background (bg) Neutral – Rest\n\nContainer background:\n→ Avatar Initials generic icon, and text\n→ Date picker Item (Default, Past & Future) – Hover\n→ Dropdown Item – Hover\n→ Pagination Item – Hover\n→ Sidebar Item – Hover\n→ Tab Item – Hover\n→ Progress Tracker Icon, Number (In-coming)"
       },
       "hover": {
         "$type": "color",
@@ -67,17 +67,17 @@
         "rest": {
           "$type": "color",
           "$value": "{neutral.700}",
-          "$description": "Background (bg) Neutral Bold – Rest\n\nContainer background:\n→ Alert Neutral un-emphasize\n→ Badge Neutral un-emphasize\n→ Button Neutral"
+          "$description": "Background (bg) Neutral Bold – Rest\n\nContainer background:  → Alert Neutral un-emphasize\n→ Badge Neutral un-emphasize\n→ Button Neutral"
         },
         "hover": {
           "$type": "color",
           "$value": "{neutral.600}",
-          "$description": "Background (bg) Neutral Bold – Hover\n\nContainer background:\n→ Button Neutral, Outline, Ghost Neutral Hover\n→ Chip Unselected Hover"
+          "$description": "Background (bg) Neutral Bold – Hover\n\nContainer background:  → Button Neutral, Outline, Ghost Neutral Hover\n→ Chip Unselected Hover"
         },
         "pressed": {
           "$type": "color",
           "$value": "{neutral.500}",
-          "$description": "Background (bg) Neutral Bold – Pressed\n\nContainer background:\n→ Button Neutral, Outline, Ghost Neutral Pressed\n→ Chip Unselected Pressed"
+          "$description": "Background (bg) Neutral Bold – Pressed\n\nContainer background:  → Button Neutral, Outline, Ghost Neutral Pressed\n→ Chip Unselected Pressed"
         },
         "disabled": {
           "$type": "color",
@@ -461,41 +461,41 @@
       "header": {
         "$type": "color",
         "$value": "{neutral.900}",
-        "$description": "Component: Segment control",
+        "$description": "",
         "overlay": {
           "$type": "color",
           "$value": "{transparent}",
-          "$description": "Component: Segment control"
+          "$description": ""
         },
         "overlay-hover": {
           "$type": "color",
           "$value": "{white-alpha.0,25}",
-          "$description": "Component: Segment control"
+          "$description": ""
         },
         "overlay-pressed": {
           "$type": "color",
           "$value": "{white-alpha.2,25}",
-          "$description": "Component: Segment control"
+          "$description": ""
         }
       },
       "body": {
         "$type": "color",
         "$value": "{neutral.800}",
-        "$description": "Component: Segment control",
+        "$description": "",
         "overlay": {
           "$type": "color",
           "$value": "{transparent}",
-          "$description": "Component: Segment control"
+          "$description": ""
         },
         "overlay-hover": {
           "$type": "color",
           "$value": "{white-alpha.0,25}",
-          "$description": "Component: Segment control"
+          "$description": ""
         },
         "overlay-pressed": {
           "$type": "color",
           "$value": "{white-alpha.2,25}",
-          "$description": "Component: Segment control"
+          "$description": ""
         }
       }
     },

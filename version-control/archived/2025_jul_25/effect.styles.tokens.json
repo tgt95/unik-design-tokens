@@ -6,7 +6,7 @@
         {
           "offsetX": "{50.x}",
           "offsetY": "{50.y}",
-          "blur": "{50.blur}",
+          "blur": "{50.Blur}",
           "spread": "{50.spread}",
           "color": "{50.color}"
         }
@@ -18,7 +18,7 @@
         {
           "offsetX": "{100.x}",
           "offsetY": "{100.y}",
-          "blur": "{100.blur}",
+          "blur": "{100.Blur}",
           "spread": "{100.spread}",
           "color": "{100.color}"
         }
@@ -30,7 +30,7 @@
         {
           "offsetX": "{200.x}",
           "offsetY": "{200.y}",
-          "blur": "{200.blur}",
+          "blur": "{200.Blur}",
           "spread": "{200.spread}",
           "color": "{200.color}"
         }
@@ -42,7 +42,7 @@
         {
           "offsetX": "{300.x}",
           "offsetY": "{300.y}",
-          "blur": "{300.blur}",
+          "blur": "{300.Blur}",
           "spread": "{300.spread}",
           "color": "{300.color}"
         }
@@ -54,7 +54,7 @@
         {
           "offsetX": "{400.x}",
           "offsetY": "{400.y}",
-          "blur": "{400.blur}",
+          "blur": "{400.Blur}",
           "spread": "{400.spread}",
           "color": "{400.color}"
         }
@@ -66,7 +66,7 @@
         {
           "offsetX": "{500.x}",
           "offsetY": "{500.y}",
-          "blur": "{500.blur}",
+          "blur": "{500.Blur}",
           "spread": "{500.spread}",
           "color": "{500.color}"
         }
@@ -78,7 +78,7 @@
         {
           "offsetX": "{600.x}",
           "offsetY": "{600.y}",
-          "blur": "{600.blur}",
+          "blur": "{600.Blur}",
           "spread": "{600.spread}",
           "color": "{600.color}"
         }
@@ -90,7 +90,7 @@
         {
           "offsetX": "{600.x}",
           "offsetY": "-6px",
-          "blur": "{600.blur}",
+          "blur": "{600.Blur}",
           "spread": "{600.spread}",
           "color": "{600.color}"
         }
@@ -102,7 +102,7 @@
         {
           "offsetX": "{100.x}",
           "offsetY": "-3px",
-          "blur": "{100.blur}",
+          "blur": "{100.Blur}",
           "spread": "{100.spread}",
           "color": "{100.color}"
         }
@@ -114,7 +114,7 @@
         {
           "offsetX": "{200.x}",
           "offsetY": "-3px",
-          "blur": "{200.blur}",
+          "blur": "{200.Blur}",
           "spread": "{200.spread}",
           "color": "{200.color}"
         }
@@ -126,7 +126,7 @@
         {
           "offsetX": "-3px",
           "offsetY": "-3px",
-          "blur": "{200.blur}",
+          "blur": "{200.Blur}",
           "spread": "{200.spread}",
           "color": "{200.color}"
         }
@@ -138,7 +138,7 @@
         {
           "offsetX": "3px",
           "offsetY": "-3px",
-          "blur": "{200.blur}",
+          "blur": "{200.Blur}",
           "spread": "{200.spread}",
           "color": "{200.color}"
         }
@@ -150,14 +150,14 @@
         {
           "offsetX": "{200.x}",
           "offsetY": "{200.y}",
-          "blur": "{200.blur}",
+          "blur": "{200.Blur}",
           "spread": "{200.spread}",
           "color": "{200.color}"
         },
         {
           "offsetX": "{200.x}",
           "offsetY": "-3px",
-          "blur": "{200.blur}",
+          "blur": "{200.Blur}",
           "spread": "{200.spread}",
           "color": "{200.color}"
         }
@@ -169,14 +169,14 @@
         {
           "offsetX": "{300.x}",
           "offsetY": "{300.y}",
-          "blur": "{300.blur}",
+          "blur": "{300.Blur}",
           "spread": "{300.spread}",
           "color": "{300.color}"
         },
         {
           "offsetX": "{300.x}",
           "offsetY": "-5px",
-          "blur": "{300.blur}",
+          "blur": "{300.Blur}",
           "spread": "{300.spread}",
           "color": "{300.color}"
         }
