@@ -1,5 +1,4 @@
-export function assetUrl(path) {
-  // ensure no double slash
-  const base = import.meta.env.BASE_URL || '/';
-  return base.replace(/\/$/, '') + '/' + path.replace(/^\//, '');
-}
+// ensure no double slashes
+export const baseURL = (
+  import.meta.env.VITE_BASE_URL.replace(/\/$/, '') + '/' + import.meta.env.VITE_BASE_URL.replace(/^\//, '')
+) || '/';

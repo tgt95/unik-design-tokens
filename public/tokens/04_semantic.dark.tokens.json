@@ -365,43 +365,43 @@
     "brand": {
       "rest": {
         "$type": "color",
-        "$value": "{bg.brand.rest.on-dark}",
+        "$value": "{learnai.400}",
         "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
       },
       "hover": {
         "$type": "color",
-        "$value": "{bg.brand.hover.on-dark}",
+        "$value": "{learnai.500}",
         "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
       },
       "pressed": {
         "$type": "color",
-        "$value": "{bg.brand.pressed.on-dark}",
+        "$value": "{learnai.300}",
         "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
       },
       "disabled": {
         "$type": "color",
-        "$value": "{bg.brand.disabled.on-dark}",
+        "$value": "{learnai.800}",
         "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
       },
       "subtle": {
         "rest": {
           "$type": "color",
-          "$value": "{bg.brand.subtle.rest.on-dark}",
+          "$value": "{learnai.800}",
           "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
         },
         "hover": {
           "$type": "color",
-          "$value": "{bg.brand.subtle.hover.on-dark}",
+          "$value": "{learnai.800}",
           "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{bg.brand.subtle.pressed.on-dark}",
+          "$value": "{learnai.950}",
           "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bg.brand.subtle.disabled.on-dark}",
+          "$value": "{learnai.800}",
           "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
         }
       }
@@ -409,50 +409,50 @@
     "selected": {
       "rest": {
         "$type": "color",
-        "$value": "{bg.selected.rest.on-dark}",
+        "$value": "{learnai.900}",
         "$description": "BG Brand 1 – Rest\n\n- Primary surfaces: Button, Badge background"
       },
       "hover": {
         "$type": "color",
-        "$value": "{bg.selected.hover.on-dark}",
+        "$value": "{learnai.800}",
         "$description": "BG Brand 1 – Hover\n\n- Primary surfaces: Button, Badge background"
       },
       "pressed": {
         "$type": "color",
-        "$value": "{bg.selected.pressed.on-dark}",
+        "$value": "{learnai.950}",
         "$description": "BG Brand 1 – Pressed\n\n- Primary surfaces: Button background"
       },
       "disabled": {
         "$type": "color",
-        "$value": "{bg.selected.disabled.on-dark}",
+        "$value": "{learnai.900}",
         "$description": "BG Brand 1 – Disabled\n\n- Primary surfaces: Button background"
       },
       "bolder": {
         "rest": {
           "$type": "color",
-          "$value": "{bg.selected.bolder.rest.on-dark}",
+          "$value": "{learnai.900}",
           "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
         }
       },
       "boldest": {
         "rest": {
           "$type": "color",
-          "$value": "{bg.selected.boldest.rest.on-dark}",
+          "$value": "{learnai.400}",
           "$description": "BG Brand 2 – Rest\n\n- Secondary surfaces: Button background"
         },
         "hover": {
           "$type": "color",
-          "$value": "{bg.selected.boldest.hover.on-dark}",
+          "$value": "{learnai.300}",
           "$description": "BG Brand 2 – Hover\n\n- Secondary surfaces: Button background"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{bg.selected.boldest.pressed.on-dark}",
+          "$value": "{learnai.700}",
           "$description": "BG Brand 2 – Pressed\n\n- Secondary surfaces: Button background"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bg.selected.boldest.disabled.on-dark}",
+          "$value": "{learnai.950}",
           "$description": "BG Brand 2 – Disabled\n\n- Secondary surfaces: Button background"
         }
       }
@@ -708,105 +708,105 @@
     "brand": {
       "rest": {
         "$type": "color",
-        "$value": "{fg.brand.rest.on-dark}"
+        "$value": "{learnai.400}"
       },
       "rest-strong": {
         "$type": "color",
-        "$value": "{fg.brand.rest.strong.on-dark}"
+        "$value": "{learnai.300}"
       },
       "hover": {
         "$type": "color",
-        "$value": "{fg.brand.hover.on-dark}"
+        "$value": "{learnai.500}"
       },
       "pressed": {
         "$type": "color",
-        "$value": "{fg.brand.pressed.on-dark}"
+        "$value": "{learnai.300}"
       },
       "pressed-strong": {
         "$type": "color",
-        "$value": "{fg.brand.pressed.strong.on-dark}"
+        "$value": "{learnai.400}"
       },
       "disabled": {
         "$type": "color",
-        "$value": "{fg.brand.disabled.on-dark}"
+        "$value": "{learnai.700}"
       },
       "disabled-strong": {
         "$type": "color",
-        "$value": "{fg.brand.disabled.strong.on-dark}"
+        "$value": "{learnai.800}"
       }
     },
     "btn-primary": {
       "$type": "color",
-      "$value": "{fg.btn.primary.on-dark}"
+      "$value": "{neutral.950}"
     },
     "btn-primary-disabled": {
       "$type": "color",
-      "$value": "{fg.btn.primary.disabled.on-dark}"
+      "$value": "{learnai.700}"
     },
     "checkbox": {
       "$type": "color",
-      "$value": "{fg.checkbox.on-dark}"
+      "$value": "{learnai.800}"
     },
     "checkbox-disabled": {
       "$type": "color",
-      "$value": "{fg.checkbox.disabled-on-dark}"
+      "$value": "{learnai.800}"
     },
     "selected": {
       "rest": {
         "$type": "color",
-        "$value": "{fg.selected.rest.on-dark}"
+        "$value": "{learnai.400}"
       },
       "hover": {
         "$type": "color",
-        "$value": "{fg.selected.hover.on-dark}"
+        "$value": "{learnai.500}"
       },
       "pressed": {
         "$type": "color",
-        "$value": "{fg.selected.pressed.on-dark}"
+        "$value": "{learnai.300}"
       },
       "disabled": {
         "$type": "color",
-        "$value": "{fg.selected.disabled.on-dark}"
+        "$value": "{learnai.700}"
       },
       "subtle": {
         "$type": "color",
-        "$value": "{fg.selected.subtle.on-dark}"
+        "$value": "{learnai.400}"
       },
       "bold": {
         "$type": "color",
-        "$value": "{fg.selected.bold.on-dark}"
+        "$value": "{learnai.900}"
       }
     }
   },
   "focus-ring": {
     "$type": "color",
-    "$value": "{focus-ring.on-dark}",
+    "$value": "{learnai.400}",
     "$description": "Divide, Line, Border"
   },
   "border": {
     "indicator": {
       "$type": "color",
-      "$value": "{border.indicator.on-dark}",
+      "$value": "{learnai.400}",
       "$description": "Card Border"
     },
     "indicator-disabled": {
       "$type": "color",
-      "$value": "{border.indicator.disabled.on-dark}",
+      "$value": "{learnai.700}",
       "$description": "Card Border"
     },
     "selected": {
       "$type": "color",
-      "$value": "{border.selected.on-dark}",
+      "$value": "{learnai.400}",
       "$description": "Card Border"
     },
     "selected-boldest": {
       "$type": "color",
-      "$value": "{border.selected.boldest.on-dark}",
+      "$value": "{learnai.400}",
       "$description": "Card Border"
     },
     "selected-disabled": {
       "$type": "color",
-      "$value": "{border.selected.disabled.on-dark}",
+      "$value": "{learnai.700}",
       "$description": "Card Border"
     },
     "segment-control": {
@@ -821,7 +821,7 @@
     },
     "input-active": {
       "$type": "color",
-      "$value": "{border.input.active.on-dark}",
+      "$value": "{learnai.400}",
       "$description": "Card Border"
     },
     "input-disabled": {
@@ -878,17 +878,17 @@
     },
     "active": {
       "$type": "color",
-      "$value": "{border.active.on-dark}",
+      "$value": "{learnai.400}",
       "$description": "Divide, Line, Border"
     },
     "active-strong": {
       "$type": "color",
-      "$value": "{border.active.strong.on-dark}",
+      "$value": "{learnai.300}",
       "$description": "Divide, Line, Border"
     },
     "active-light": {
       "$type": "color",
-      "$value": "{border.active.light.on-dark}",
+      "$value": "{learnai.700}",
       "$description": "Divide, Line, Border"
     },
     "info": {
