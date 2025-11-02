@@ -1,0 +1,2 @@
+node merge-theme-into-semantic.js 09_theme.brand_1.tokens.json 04_semantic.dark.tokens.json on-dark 04_semantic.dark.tokens.json
+node merge-theme-into-semantic.js 09_theme.brand_1.tokens.json 04_semantic.light.tokens.json on-light 04_semantic.light.tokens.json
