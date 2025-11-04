@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font: 12px/1.4 ui-sans-serif, system-ui, -apple-system;
+      margin: 0;
+      color: #222;
+    }
+
+    header {
+      padding: 10px 12px;
+      border-bottom: 1px solid #ddd;
+      font-weight: 600;
+    }
+
+    .wrap {
+      padding: 12px;
+      max-height: 320px;
+      overflow: auto;
+    }
+
+    .col {
+      background-color: transparent;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 8px 8px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      cursor: pointer;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .col.is-checked {
+      border: 1px solid #0d99ff;
+      /* box-shadow:0 0 6px rgba(13,153,255,0.3); */
+    }
+
+    .col:hover {
+      background-color: rgba(13, 153, 255, 0.1);
+    }
+
+    .name {
+      font-weight: 700
+    }
+
+    .modes {
+      opacity: 0.7;
+      font-size: 11px;
+    }
+
+    .right {
+      opacity: 0.6;
+      font-size: 12px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      border-top: 1px solid #ddd;
+    }
+
+    button {
+      border: 0;
+      border-radius: 4px;
+      padding: 6px 10px;
+      background: #0d99ff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: #eee;
+      color: #333;
+      transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    button.secondary:hover {
+      background: #dedede;
+    }
+    button.secondary:active {
+      background: #cac9c9;
+    }
+
+    input[type="number"] {
+      width: 80px;
+      padding: 4px 6px;
+    }
+
+    .units {
+      padding: 10px 12px;
+      border-top: 1px dashed #ddd;
+      background: #fafafa;
+    }
+
+    .units h3 {
+      margin: 0 0 8px 0;
+      font-size: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Select collections to print</header>
+  <div class="wrap" id="list"></div>
+
+  <div class="units">
+    <h3>Float units to display</h3>
+    <div class="grid">
+      <label><input id="u_px" type="checkbox" checked> px</label>
+      <label><input id="u_rem" type="checkbox" checked> rem</label>
+      <label><input id="u_em" type="checkbox" checked> em</label>
+      <label><input id="u_pct" type="checkbox"> %</label>
+      <label><input id="u_ms" type="checkbox"> ms</label>
+      <label><input id="u_s" type="checkbox"> s</label>
+    </div>
+    <div style="margin-top:8px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+      <label>Base px for rem/em: <input id="basePx" type="number" value="16" min="1"></label>
+      <label>% divisor (value / X * 100): <input id="pctOf" type="number" value="1" min="0.001" step="0.001"></label>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <button class="secondary" id="selectAll">Select all</button>
+      <button class="secondary" id="selectNone">Clear</button>
+    </div>
+    <div>
+      <button id="printBtn">Print to Canvas</button>
+    </div>
+  </footer>
+
+  <script>
+    const list = document.getElementById('list');
+    let collections = [];
+    window.onmessage = (e) => {
+      const msg = e.data.pluginMessage;
+      if (!msg || msg.type !== 'COLLECTIONS') return;
+      collections = msg.collections || [];
+      render();
+    };
+    function render() {
+      list.innerHTML = '';
+      collections.forEach((c) => {
+        const card = document.createElement('div');
+        card.className = 'col is-checked';
+        const left = document.createElement('div');
+        const row = document.createElement('div');
+        row.className = 'row';
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.value = c.id;
+        cb.checked = true;
+        const label = document.createElement('div');
+        label.className = 'name';
+        label.textContent = c.name;
+        row.appendChild(cb);
+        row.appendChild(label);
+        const modes = document.createElement('div');
+        modes.className = 'modes';
+        modes.textContent = 'Modes: ' + (c.modes.join(', ') || '—');
+        left.appendChild(row);
+        left.appendChild(modes);
+
+        const right = document.createElement('div');
+        right.className = 'right';
+        right.textContent = c.count;
+
+        // Clicking anywhere on the card toggles the checkbox
+        card.addEventListener('click', (ev) => {
+          cb.checked ? ev.target.classList.remove('is-checked') : ev.target.classList.add('is-checked');
+          // don't toggle if clicking directly on the checkbox to avoid double toggles
+          if (ev.target === cb) return;
+          cb.checked = !cb.checked;
+        });
+
+        card.appendChild(left);
+        card.appendChild(right);
+        list.appendChild(card);
+      });
+    }
+    document.getElementById('selectAll').onclick = () => {
+      list.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = true);
+    };
+    document.getElementById('selectNone').onclick = () => {
+      list.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = false);
+    };
+    document.getElementById('printBtn').onclick = () => {
+      const selected = Array.from(list.querySelectorAll('input[type=checkbox]'))
+        .filter(cb => cb.checked).map(cb => cb.value);
+      const unitCfg = {
+        showPx: document.getElementById('u_px').checked,
+        showRem: document.getElementById('u_rem').checked,
+        showEm: document.getElementById('u_em').checked,
+        showPercent: document.getElementById('u_pct').checked,
+        showMs: document.getElementById('u_ms').checked,
+        showS: document.getElementById('u_s').checked,
+        basePxForRemEm: parseFloat(document.getElementById('basePx').value || '16'),
+        percentOf: parseFloat(document.getElementById('pctOf').value || '1')
+      };
+      parent.postMessage({ pluginMessage: { type: 'PRINT_SELECTED', selected, unitCfg } }, '*');
+    };
+  </script>
+</body>
+
+</html>
