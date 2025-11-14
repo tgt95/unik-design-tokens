@@ -11,11 +11,11 @@
  * }
  */
 export function flattenTokens(tokens, path = [], meta = {}) {
-  const result = {};
+  const result = {}
 
   for (const key in tokens) {
-    const item = tokens[key];
-    const currentPath = [...path, key];
+    const item = tokens[key]
+    const currentPath = [...path, key]
 
     // Only process objects (skip arrays / primitives)
     if (item && typeof item === 'object' && !Array.isArray(item)) {
@@ -27,18 +27,15 @@ export function flattenTokens(tokens, path = [], meta = {}) {
           value: item.value ?? item.$value,
           // Wrap nullish coalesce in () before || to satisfy Babel
           description: (item.description ?? item.$description) || ''
-        };
+        }
       } else {
         // Nested group: recurse
-        Object.assign(
-          result,
-          flattenTokens(item, currentPath, meta)
-        );
+        Object.assign(result, flattenTokens(item, currentPath, meta))
       }
     }
   }
 
-  return result;
+  return result
 }
 
 /**
@@ -48,28 +45,28 @@ export function flattenTokens(tokens, path = [], meta = {}) {
 export function resolveAlias(value, flatTokens, seen = new Set()) {
   // If it’s not an alias reference, return as-is
   if (typeof value !== 'string' || !value.startsWith('{')) {
-    return value;
+    return value
   }
 
-  const key = value.replace(/[{}]/g, '');
+  const key = value.replace(/[{}]/g, '')
   if (seen.has(key)) {
     // Circular reference guard
-    return value;
+    return value
   }
-  seen.add(key);
+  seen.add(key)
 
   // 1) Try flat lookup
-  let target = flatTokens[key];
+  let target = flatTokens[key]
   // 2) Fallback to nested lookup
   if (!target) {
-    target = key.split('.').reduce((obj, part) => obj?.[part], flatTokens);
+    target = key.split('.').reduce((obj, part) => obj?.[part], flatTokens)
   }
   if (!target) {
-    return value;
+    return value
   }
 
-  const next = target.value ?? target.$value;
-  return resolveAlias(next, flatTokens, seen);
+  const next = target.value ?? target.$value
+  return resolveAlias(next, flatTokens, seen)
 }
 
 /**
@@ -78,32 +75,32 @@ export function resolveAlias(value, flatTokens, seen = new Set()) {
  * returns ["{a.b}", "{c.d}", "#fff"]
  */
 export function getAliasChain(initialValue, flatTokens) {
-  const chain = [];
-  let current = initialValue;
-  const seen = new Set();
+  const chain = []
+  let current = initialValue
+  const seen = new Set()
 
   while (typeof current === 'string' && current.startsWith('{')) {
     if (seen.has(current)) {
-      break;
+      break
     }
-    seen.add(current);
-    chain.push(current);
+    seen.add(current)
+    chain.push(current)
 
-    const key = current.replace(/[{}]/g, '');
-    const target = flatTokens[key];
-    if (!target) break;
+    const key = current.replace(/[{}]/g, '')
+    const target = flatTokens[key]
+    if (!target) break
 
-    const next = target.value ?? target.$value;
-    if (typeof next !== 'string') break;
-    current = next;
+    const next = target.value ?? target.$value
+    if (typeof next !== 'string') break
+    current = next
   }
 
   // Append final literal if not an alias
   if (typeof current === 'string' && !current.startsWith('{')) {
-    chain.push(current);
+    chain.push(current)
   }
 
-  return chain;
+  return chain
 }
 
 /**
@@ -111,20 +108,20 @@ export function getAliasChain(initialValue, flatTokens) {
  * preserving the exact order of the incoming `tokenNames` array.
  */
 export function buildTree(tokenNames) {
-  const root = {};
-  tokenNames.forEach(fullName => {
-    const parts = fullName.split('.');
-    let node = root;
+  const root = {}
+  tokenNames.forEach((fullName) => {
+    const parts = fullName.split('.')
+    let node = root
     parts.forEach((part, i) => {
       if (!node[part]) {
         node[part] = {
           name: part,
           fullPath: parts.slice(0, i + 1).join('.'),
           children: {}
-        };
+        }
       }
-      node = node[part].children;
-    });
-  });
-  return root;
+      node = node[part].children
+    })
+  })
+  return root
 }

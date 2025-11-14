@@ -2,20 +2,12 @@
 import React, { useState } from 'react'
 import './TokenRow.css'
 
-export default function TokenRow({
-  tokenName,
-  modes = {},
-  depth = 0,
-  collection,
-}) {
+export default function TokenRow({ tokenName, modes = {}, depth = 0, collection }) {
   const [copiedKey, setCopiedKey] = useState(null)
   const modeNames = Object.keys(modes)
 
   // first non-empty description
-  const description =
-    modeNames
-      .map((m) => modes[m][tokenName]?.description)
-      .find(Boolean) || ''
+  const description = modeNames.map((m) => modes[m][tokenName]?.description).find(Boolean) || ''
 
   // build the alias/value chain (unchanged)
   function getFullChain(mode, startName) {
@@ -44,10 +36,7 @@ export default function TokenRow({
       break
     }
 
-    if (
-      chain.length >= 2 &&
-      chain[chain.length - 1] === chain[chain.length - 2]
-    ) {
+    if (chain.length >= 2 && chain[chain.length - 1] === chain[chain.length - 2]) {
       chain.pop()
     }
 
@@ -69,7 +58,7 @@ export default function TokenRow({
           700: 'Bold',
           800: 'Extra Bold (Ultra Bold)',
           900: 'Black (Heavy)',
-          950: 'Extra Black (Ultra Black)',
+          950: 'Extra Black (Ultra Black)'
         }
         if (weightMap[last]) {
           chain[chain.length - 1] = `${last} — ${weightMap[last]}`
@@ -95,24 +84,18 @@ export default function TokenRow({
   }
 
   return (
-    <tr id={`${collection}-${tokenName}`} className="token-row">
+    <tr id={`${collection}-${tokenName}`} className='token-row'>
       {/* Name cell */}
       <td
-        className="tree-cell"
+        className='tree-cell'
         style={{
           '--depth': depth,
-          paddingLeft: `${8 + depth * 16 + 16}px`,
+          paddingLeft: `${8 + depth * 16 + 16}px`
         }}
       >
-        <span
-          className="name-token"
-          onClick={copyTokenName}
-          title="Click to copy token name"
-        >
+        <span className='name-token' onClick={copyTokenName} title='Click to copy token name'>
           {tokenName}
-          {copiedKey === nameKey && (
-            <span className="copy-tooltip">Copied!</span>
-          )}
+          {copiedKey === nameKey && <span className='copy-tooltip'>Copied!</span>}
         </span>
       </td>
 
@@ -124,16 +107,12 @@ export default function TokenRow({
           <React.Fragment key={mode}>
             <td>
               {/^.*/.test(final) && /^#/.test(final) ? (
-                <span
-                  className="color-box"
-                  style={{ backgroundColor: final }}
-                  title={final}
-                />
+                <span className='color-box' style={{ backgroundColor: final }} title={final} />
               ) : (
                 '—'
               )}
             </td>
-            <td className="alias-stack">
+            <td className='alias-stack'>
               {fullChain.flatMap((item, i) => {
                 const isLast = i === fullChain.length - 1
                 const key = `${tokenName}-${mode}-${i}`
@@ -146,29 +125,25 @@ export default function TokenRow({
                   return [
                     <React.Fragment key={pxKey}>
                       <div
-                        className="alias-token"
+                        className='alias-token'
                         onClick={() => handleCopy(px, pxKey)}
                         style={{ cursor: 'pointer', position: 'relative' }}
                       >
                         {px}
-                        {copiedKey === pxKey && (
-                          <span className="copy-tooltip">Copied!</span>
-                        )}
+                        {copiedKey === pxKey && <span className='copy-tooltip'>Copied!</span>}
                       </div>
-                      <div className="alias-arrow">↓</div>
+                      <div className='alias-arrow'>↓</div>
                     </React.Fragment>,
                     <React.Fragment key={remKey}>
                       <div
-                        className="alias-token"
+                        className='alias-token'
                         onClick={() => handleCopy(rem, remKey)}
                         style={{ cursor: 'pointer', position: 'relative' }}
                       >
                         {rem}
-                        {copiedKey === remKey && (
-                          <span className="copy-tooltip">Copied!</span>
-                        )}
+                        {copiedKey === remKey && <span className='copy-tooltip'>Copied!</span>}
                       </div>
-                    </React.Fragment>,
+                    </React.Fragment>
                   ]
                 }
 
@@ -176,16 +151,14 @@ export default function TokenRow({
                 return (
                   <React.Fragment key={key}>
                     <div
-                      className="alias-token"
+                      className='alias-token'
                       onClick={() => handleCopy(item, key)}
                       style={{ cursor: 'pointer', position: 'relative' }}
                     >
                       {item}
-                      {copiedKey === key && (
-                        <span className="copy-tooltip">Copied!</span>
-                      )}
+                      {copiedKey === key && <span className='copy-tooltip'>Copied!</span>}
                     </div>
-                    {!isLast && <div className="alias-arrow">↓</div>}
+                    {!isLast && <div className='alias-arrow'>↓</div>}
                   </React.Fragment>
                 )
               })}

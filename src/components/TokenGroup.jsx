@@ -1,24 +1,24 @@
-import React from 'react';
-import TokenRow from './TokenRow';
+import React from 'react'
+import TokenRow from './TokenRow'
 
 function groupByBranch(flattenedTokens) {
-  const grouped = {};
+  const grouped = {}
   for (const key in flattenedTokens) {
-    const [branch] = key.split('.');
-    if (!grouped[branch]) grouped[branch] = {};
-    grouped[branch][key] = flattenedTokens[key];
+    const [branch] = key.split('.')
+    if (!grouped[branch]) grouped[branch] = {}
+    grouped[branch][key] = flattenedTokens[key]
   }
-  return grouped;
+  return grouped
 }
 
 function TokenGroup({ mode, tokens }) {
-  const grouped = groupByBranch(tokens);
+  const grouped = groupByBranch(tokens)
 
   return (
-    <div className="token-mode">
+    <div className='token-mode'>
       <h3>{mode}</h3>
       {Object.entries(grouped).map(([branch, branchTokens]) => (
-        <div key={branch} className="token-branch">
+        <div key={branch} className='token-branch'>
           <h4>{branch}/</h4>
           <table>
             <thead>
@@ -38,7 +38,7 @@ function TokenGroup({ mode, tokens }) {
         </div>
       ))}
     </div>
-  );
+  )
 }
 
-export default TokenGroup;
+export default TokenGroup

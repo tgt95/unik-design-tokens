@@ -8,10 +8,7 @@ const __dirname = path.dirname(__filename)
 
 // helper: get nested property
 function getDeep(obj, pathArr) {
-  return pathArr.reduce(
-    (acc, key) => (acc && acc[key] !== undefined ? acc[key] : undefined),
-    obj
-  )
+  return pathArr.reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : undefined), obj)
 }
 
 // deep clone
@@ -93,9 +90,7 @@ function run(themePath, semanticPath, mode) {
 // CLI
 const args = process.argv.slice(2)
 if (args.length < 3) {
-  console.error(
-    'Usage: node script/merge-theme-into-semantic.js <theme.json> <semantic.json> <on-light|on-dark>'
-  )
+  console.error('Usage: node script/merge-theme-into-semantic.js <theme.json> <semantic.json> <on-light|on-dark>')
   process.exit(1)
 }
 
