@@ -1,1 +1,16 @@
-{"name": "Print: Variables \u2192 Table (v2.7)", "id": "variables-to-canvas-table-v2-7", "api": "1.0.0", "main": "code.js", "editorType": ["figma", "figjam"], "ui": "ui.html"}
+{
+    "name": "Print: Variables \u2192 Table",
+    "id": "1571002390564676950",
+    "api": "1.0.0",
+    "main": "code.js",
+    "editorType": [
+        "figma"
+    ],
+    "ui": "ui.html",
+    "documentAccess": "dynamic-page",
+    "networkAccess": {
+        "allowedDomains": [
+            "none"
+        ]
+    }
+}
