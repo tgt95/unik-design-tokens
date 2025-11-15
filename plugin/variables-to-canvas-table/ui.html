@@ -23,10 +23,13 @@
       padding: 12px;
       max-height: 344px;
       overflow: auto;
+      background-image: radial-gradient(#e4e4e4 1px, #fafafa 0);
+      background-position: -12px -12px;
+      background-size: 12px 12px;
     }
 
     .col {
-      background-color: transparent;
+      background-color: #ffffff;
       border: 1px solid #eee;
       border-radius: 6px;
       padding: 8px 8px;
@@ -43,7 +46,7 @@
     }
 
     .col:hover {
-      background-color: rgba(13, 153, 255, 0.1);
+      background-color: #E6F5FF;
     }
 
     .name {
@@ -68,12 +71,15 @@
     }
 
     .footer {
-      position: sticky;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
       padding: 12px;
       border-top: 1px solid #ddd;
     }
 
-    .footer-contaier {
+    .footer-container {
       display: flex;
       gap: 8px;
       justify-content: space-between;
@@ -84,15 +90,22 @@
       border: 0;
       border-radius: 4px;
       padding: 6px 10px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    button.primary {
       background: #0d99ff;
       color: #fff;
-      cursor: pointer;
+    }
+
+    button.primary:hover {
+      background: #0a6dc2;
     }
 
     button.secondary {
       background: #eee;
       color: #333;
-      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     button.secondary:hover {
@@ -110,17 +123,27 @@
 
     input[type="checkbox"] {
       margin: 0;
+      cursor: pointer;
     }
 
     .units {
+      position: fixed;
+      left: 0;
+      right: 0;
       padding: 12px 12px;
       border-top: 1px dashed #ddd;
       background: #fafafa;
+      box-shadow: 0 -4px 8px rgb(1 1 1 / 6%);
     }
 
-    .units h3 {
+    .units .title {
       margin: 0 0 8px 0;
-      font-size: 12px;
+      font-weight: 600;
+      /* font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      font-weight: 600;
+      color: #888; */
     }
 
     .grid {
@@ -139,10 +162,11 @@
 
 <body>
   <header>Select collections to print</header>
+  
   <div class="wrap" id="list"></div>
 
   <div class="units">
-    <h3>Float units to display</h3>
+    <div class="title">Float units to display</div>
     <div class="grid">
       <label><input id="u_px" type="checkbox" checked /> px</label>
       <label><input id="u_rem" type="checkbox" checked /> rem</label>
@@ -162,22 +186,28 @@
   </div>
 
   <footer class="footer">
-    <div class="footer-contaier">
+    <div class="footer-container">
       <div>
         <button class="secondary" id="selectAll">Deselect all</button>
         <button class="secondary" id="selectNone">Clear</button>
       </div>
       <div>
-        <button id="printBtn">Print to Canvas</button>
+        <button class="primary" id="printBtn">Print to Canvas</button>
       </div>
     </div>
   </footer>
 
   <script>
+    const footer = document.querySelector('.footer')
+    const units = document.querySelector('.units')
     const list = document.getElementById('list')
     const selectAllBtn = document.getElementById('selectAll')
     const clearBtn = document.getElementById('selectNone')
     let collections = []
+
+    // --- Helpers for tri-state logic ----------------------------------------
+    units.style.bottom = footer.getBoundingClientRect().height
+    list.style.height = `calc(100% - ${footer.getBoundingClientRect().height}px - ${units.getBoundingClientRect().height}px)`
 
     // --- Helpers for tri-state logic ----------------------------------------
     function getSelectionState() {
@@ -207,6 +237,14 @@
 
     function render() {
       list.innerHTML = ''
+      console.log(list)
+      if (collections.length === 0) {
+        list.insertAdjacentHTML('beforeend', `
+          <div style="display: flex; justify-content: center; align-items: center; height: 100%; color: #666;">
+            Nothings here to show
+          </div>
+        `);
+      }
       collections.forEach((c) => {
         const card = document.createElement('div')
         card.className = 'col is-checked'
