@@ -1,0 +1,10 @@
+{
+  "sm": {
+    "$type": "dimension",
+    "$value": "{radius.full}"
+  },
+  "lg": {
+    "$type": "dimension",
+    "$value": "{radius.full}"
+  }
+}

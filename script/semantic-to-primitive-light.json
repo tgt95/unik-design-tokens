@@ -1,0 +1,1630 @@
+{
+  "color.text.[default]": {
+    "primitive": "Neutral1000",
+    "hex": "#292A2E"
+  },
+  "color.text.accent.lime.[default]": {
+    "primitive": "Lime800",
+    "hex": "#4C6B1F"
+  },
+  "color.text.accent.lime.bolder": {
+    "primitive": "Lime900",
+    "hex": "#37471F"
+  },
+  "color.text.accent.red.[default]": {
+    "primitive": "Red800",
+    "hex": "#AE2E24"
+  },
+  "color.text.accent.red.bolder": {
+    "primitive": "Red900",
+    "hex": "#5D1F1A"
+  },
+  "color.text.accent.orange.[default]": {
+    "primitive": "Orange800",
+    "hex": "#9E4C00"
+  },
+  "color.text.accent.orange.bolder": {
+    "primitive": "Orange900",
+    "hex": "#693200"
+  },
+  "color.text.accent.yellow.[default]": {
+    "primitive": "Yellow800",
+    "hex": "#7F5F01"
+  },
+  "color.text.accent.yellow.bolder": {
+    "primitive": "Yellow900",
+    "hex": "#533F04"
+  },
+  "color.text.accent.green.[default]": {
+    "primitive": "Green800",
+    "hex": "#216E4E"
+  },
+  "color.text.accent.green.bolder": {
+    "primitive": "Green900",
+    "hex": "#164B35"
+  },
+  "color.text.accent.teal.[default]": {
+    "primitive": "Teal800",
+    "hex": "#206A83"
+  },
+  "color.text.accent.teal.bolder": {
+    "primitive": "Teal900",
+    "hex": "#164555"
+  },
+  "color.text.accent.blue.[default]": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.text.accent.blue.bolder": {
+    "primitive": "Blue900",
+    "hex": "#123263"
+  },
+  "color.text.accent.purple.[default]": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.text.accent.purple.bolder": {
+    "primitive": "Purple900",
+    "hex": "#48245D"
+  },
+  "color.text.accent.magenta.[default]": {
+    "primitive": "Magenta800",
+    "hex": "#943D73"
+  },
+  "color.text.accent.magenta.bolder": {
+    "primitive": "Magenta900",
+    "hex": "#50253F"
+  },
+  "color.text.accent.gray.[default]": {
+    "primitive": "Neutral800",
+    "hex": "#505258"
+  },
+  "color.text.accent.gray.bolder": {
+    "primitive": "Neutral1100",
+    "hex": "#1E1F21"
+  },
+  "color.text.disabled": {
+    "primitive": "Neutral400A",
+    "hex": "#080F214A"
+  },
+  "color.text.inverse": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "color.text.selected": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.text.brand": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.text.danger.[default]": {
+    "primitive": "Red800",
+    "hex": "#AE2E24"
+  },
+  "color.text.danger.bolder": {
+    "primitive": "Red900",
+    "hex": "#5D1F1A"
+  },
+  "color.text.warning.[default]": {
+    "primitive": "Orange800",
+    "hex": "#9E4C00"
+  },
+  "color.text.warning.inverse": {
+    "primitive": "Neutral1000",
+    "hex": "#292A2E"
+  },
+  "color.text.warning.bolder": {
+    "primitive": "Orange900",
+    "hex": "#693200"
+  },
+  "color.text.success.[default]": {
+    "primitive": "Lime800",
+    "hex": "#4C6B1F"
+  },
+  "color.text.success.bolder": {
+    "primitive": "Lime900",
+    "hex": "#37471F"
+  },
+  "color.text.discovery.[default]": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.text.discovery.bolder": {
+    "primitive": "Purple900",
+    "hex": "#48245D"
+  },
+  "color.text.information.[default]": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.text.information.bolder": {
+    "primitive": "Blue900",
+    "hex": "#123263"
+  },
+  "color.text.subtlest": {
+    "primitive": "Neutral700",
+    "hex": "#6B6E76"
+  },
+  "color.text.subtle": {
+    "primitive": "Neutral800",
+    "hex": "#505258"
+  },
+  "color.link.[default]": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.link.pressed": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.link.visited.[default]": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.link.visited.pressed": {
+    "primitive": "Purple900",
+    "hex": "#48245D"
+  },
+  "color.icon.[default]": {
+    "primitive": "Neutral1000",
+    "hex": "#292A2E"
+  },
+  "color.icon.accent.lime": {
+    "primitive": "Lime600",
+    "hex": "#6A9A23"
+  },
+  "color.icon.accent.red": {
+    "primitive": "Red700",
+    "hex": "#C9372C"
+  },
+  "color.icon.accent.orange": {
+    "primitive": "Orange600",
+    "hex": "#E06C00"
+  },
+  "color.icon.accent.yellow": {
+    "primitive": "Yellow600",
+    "hex": "#B38600"
+  },
+  "color.icon.accent.green": {
+    "primitive": "Green600",
+    "hex": "#22A06B"
+  },
+  "color.icon.accent.teal": {
+    "primitive": "Teal600",
+    "hex": "#2898BD"
+  },
+  "color.icon.accent.blue": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.icon.accent.purple": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.icon.accent.magenta": {
+    "primitive": "Magenta600",
+    "hex": "#CD519D"
+  },
+  "color.icon.accent.gray": {
+    "primitive": "Neutral600",
+    "hex": "#7D818A"
+  },
+  "color.icon.disabled": {
+    "primitive": "Neutral400A",
+    "hex": "#080F214A"
+  },
+  "color.icon.inverse": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "color.icon.selected": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.icon.brand": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.icon.danger": {
+    "primitive": "Red700",
+    "hex": "#C9372C"
+  },
+  "color.icon.warning.[default]": {
+    "primitive": "Orange600",
+    "hex": "#E06C00"
+  },
+  "color.icon.warning.inverse": {
+    "primitive": "Neutral1000",
+    "hex": "#292A2E"
+  },
+  "color.icon.success": {
+    "primitive": "Lime600",
+    "hex": "#6A9A23"
+  },
+  "color.icon.discovery": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.icon.information": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.icon.subtlest": {
+    "primitive": "Neutral700",
+    "hex": "#6B6E76"
+  },
+  "color.icon.subtle": {
+    "primitive": "Neutral800",
+    "hex": "#505258"
+  },
+  "color.border.[default]": {
+    "primitive": "Neutral300A",
+    "hex": "#0B120E24"
+  },
+  "color.border.accent.lime": {
+    "primitive": "Lime600",
+    "hex": "#6A9A23"
+  },
+  "color.border.accent.red": {
+    "primitive": "Red600",
+    "hex": "#E2483D"
+  },
+  "color.border.accent.orange": {
+    "primitive": "Orange600",
+    "hex": "#E06C00"
+  },
+  "color.border.accent.yellow": {
+    "primitive": "Yellow600",
+    "hex": "#B38600"
+  },
+  "color.border.accent.green": {
+    "primitive": "Green600",
+    "hex": "#22A06B"
+  },
+  "color.border.accent.teal": {
+    "primitive": "Teal600",
+    "hex": "#2898BD"
+  },
+  "color.border.accent.blue": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.border.accent.purple": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.border.accent.magenta": {
+    "primitive": "Magenta600",
+    "hex": "#CD519D"
+  },
+  "color.border.accent.gray": {
+    "primitive": "Neutral600",
+    "hex": "#7D818A"
+  },
+  "color.border.disabled": {
+    "primitive": "Neutral200A",
+    "hex": "#0515240F"
+  },
+  "color.border.focused": {
+    "primitive": "Blue500",
+    "hex": "#4688EC"
+  },
+  "color.border.input": {
+    "primitive": "Neutral500",
+    "hex": "#8C8F97"
+  },
+  "color.border.inverse": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "color.border.selected": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.border.brand": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.border.danger": {
+    "primitive": "Red600",
+    "hex": "#E2483D"
+  },
+  "color.border.warning": {
+    "primitive": "Orange600",
+    "hex": "#E06C00"
+  },
+  "color.border.success": {
+    "primitive": "Lime600",
+    "hex": "#6A9A23"
+  },
+  "color.border.discovery": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.border.information": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.border.bold": {
+    "primitive": "Neutral600",
+    "hex": "#7D818A"
+  },
+  "color.background.accent.lime.subtlest.[default]": {
+    "primitive": "Lime100",
+    "hex": "#EFFFD6"
+  },
+  "color.background.accent.lime.subtlest.hovered": {
+    "primitive": "Lime200",
+    "hex": "#D3F1A7"
+  },
+  "color.background.accent.lime.subtlest.pressed": {
+    "primitive": "Lime250",
+    "hex": "#BDE97C"
+  },
+  "color.background.accent.lime.subtler.[default]": {
+    "primitive": "Lime200",
+    "hex": "#D3F1A7"
+  },
+  "color.background.accent.lime.subtler.hovered": {
+    "primitive": "Lime250",
+    "hex": "#BDE97C"
+  },
+  "color.background.accent.lime.subtler.pressed": {
+    "primitive": "Lime300",
+    "hex": "#B3DF72"
+  },
+  "color.background.accent.lime.subtle.[default]": {
+    "primitive": "Lime400",
+    "hex": "#94C748"
+  },
+  "color.background.accent.lime.subtle.hovered": {
+    "primitive": "Lime300",
+    "hex": "#B3DF72"
+  },
+  "color.background.accent.lime.subtle.pressed": {
+    "primitive": "Lime250",
+    "hex": "#BDE97C"
+  },
+  "color.background.accent.lime.bolder.[default]": {
+    "primitive": "Lime700",
+    "hex": "#5B7F24"
+  },
+  "color.background.accent.lime.bolder.hovered": {
+    "primitive": "Lime800",
+    "hex": "#4C6B1F"
+  },
+  "color.background.accent.lime.bolder.pressed": {
+    "primitive": "Lime850",
+    "hex": "#3F5224"
+  },
+  "color.background.accent.red.subtlest.[default]": {
+    "primitive": "Red100",
+    "hex": "#FFECEB"
+  },
+  "color.background.accent.red.subtlest.hovered": {
+    "primitive": "Red200",
+    "hex": "#FFD5D2"
+  },
+  "color.background.accent.red.subtlest.pressed": {
+    "primitive": "Red250",
+    "hex": "#FFB8B2"
+  },
+  "color.background.accent.red.subtler.[default]": {
+    "primitive": "Red200",
+    "hex": "#FFD5D2"
+  },
+  "color.background.accent.red.subtler.hovered": {
+    "primitive": "Red250",
+    "hex": "#FFB8B2"
+  },
+  "color.background.accent.red.subtler.pressed": {
+    "primitive": "Red300",
+    "hex": "#FD9891"
+  },
+  "color.background.accent.red.subtle.[default]": {
+    "primitive": "Red400",
+    "hex": "#F87168"
+  },
+  "color.background.accent.red.subtle.hovered": {
+    "primitive": "Red300",
+    "hex": "#FD9891"
+  },
+  "color.background.accent.red.subtle.pressed": {
+    "primitive": "Red250",
+    "hex": "#FFB8B2"
+  },
+  "color.background.accent.red.bolder.[default]": {
+    "primitive": "Red700",
+    "hex": "#C9372C"
+  },
+  "color.background.accent.red.bolder.hovered": {
+    "primitive": "Red800",
+    "hex": "#AE2E24"
+  },
+  "color.background.accent.red.bolder.pressed": {
+    "primitive": "Red850",
+    "hex": "#872821"
+  },
+  "color.background.accent.orange.subtlest.[default]": {
+    "primitive": "Orange100",
+    "hex": "#FFF5DB"
+  },
+  "color.background.accent.orange.subtlest.hovered": {
+    "primitive": "Orange200",
+    "hex": "#FCE4A6"
+  },
+  "color.background.accent.orange.subtlest.pressed": {
+    "primitive": "Orange250",
+    "hex": "#FBD779"
+  },
+  "color.background.accent.orange.subtler.[default]": {
+    "primitive": "Orange200",
+    "hex": "#FCE4A6"
+  },
+  "color.background.accent.orange.subtler.hovered": {
+    "primitive": "Orange250",
+    "hex": "#FBD779"
+  },
+  "color.background.accent.orange.subtler.pressed": {
+    "primitive": "Orange300",
+    "hex": "#FBC828"
+  },
+  "color.background.accent.orange.subtle.[default]": {
+    "primitive": "Orange400",
+    "hex": "#FCA700"
+  },
+  "color.background.accent.orange.subtle.hovered": {
+    "primitive": "Orange300",
+    "hex": "#FBC828"
+  },
+  "color.background.accent.orange.subtle.pressed": {
+    "primitive": "Orange250",
+    "hex": "#FBD779"
+  },
+  "color.background.accent.orange.bolder.[default]": {
+    "primitive": "Orange700",
+    "hex": "#BD5B00"
+  },
+  "color.background.accent.orange.bolder.hovered": {
+    "primitive": "Orange800",
+    "hex": "#9E4C00"
+  },
+  "color.background.accent.orange.bolder.pressed": {
+    "primitive": "Orange850",
+    "hex": "#7A3B00"
+  },
+  "color.background.accent.yellow.subtlest.[default]": {
+    "primitive": "Yellow100",
+    "hex": "#FEF7C8"
+  },
+  "color.background.accent.yellow.subtlest.hovered": {
+    "primitive": "Yellow200",
+    "hex": "#F5E989"
+  },
+  "color.background.accent.yellow.subtlest.pressed": {
+    "primitive": "Yellow250",
+    "hex": "#EFDD4E"
+  },
+  "color.background.accent.yellow.subtler.[default]": {
+    "primitive": "Yellow200",
+    "hex": "#F5E989"
+  },
+  "color.background.accent.yellow.subtler.hovered": {
+    "primitive": "Yellow250",
+    "hex": "#EFDD4E"
+  },
+  "color.background.accent.yellow.subtler.pressed": {
+    "primitive": "Yellow300",
+    "hex": "#EED12B"
+  },
+  "color.background.accent.yellow.subtle.[default]": {
+    "primitive": "Yellow300",
+    "hex": "#EED12B"
+  },
+  "color.background.accent.yellow.subtle.hovered": {
+    "primitive": "Yellow400",
+    "hex": "#DDB30E"
+  },
+  "color.background.accent.yellow.subtle.pressed": {
+    "primitive": "Yellow250",
+    "hex": "#EFDD4E"
+  },
+  "color.background.accent.yellow.bolder.[default]": {
+    "primitive": "Yellow700",
+    "hex": "#946F00"
+  },
+  "color.background.accent.yellow.bolder.hovered": {
+    "primitive": "Yellow800",
+    "hex": "#7F5F01"
+  },
+  "color.background.accent.yellow.bolder.pressed": {
+    "primitive": "Yellow850",
+    "hex": "#614A05"
+  },
+  "color.background.accent.green.subtlest.[default]": {
+    "primitive": "Green100",
+    "hex": "#DCFFF1"
+  },
+  "color.background.accent.green.subtlest.hovered": {
+    "primitive": "Green200",
+    "hex": "#BAF3DB"
+  },
+  "color.background.accent.green.subtlest.pressed": {
+    "primitive": "Green250",
+    "hex": "#97EDC9"
+  },
+  "color.background.accent.green.subtler.[default]": {
+    "primitive": "Green200",
+    "hex": "#BAF3DB"
+  },
+  "color.background.accent.green.subtler.hovered": {
+    "primitive": "Green250",
+    "hex": "#97EDC9"
+  },
+  "color.background.accent.green.subtler.pressed": {
+    "primitive": "Green300",
+    "hex": "#7EE2B8"
+  },
+  "color.background.accent.green.subtle.[default]": {
+    "primitive": "Green400",
+    "hex": "#4BCE97"
+  },
+  "color.background.accent.green.subtle.hovered": {
+    "primitive": "Green300",
+    "hex": "#7EE2B8"
+  },
+  "color.background.accent.green.subtle.pressed": {
+    "primitive": "Green250",
+    "hex": "#97EDC9"
+  },
+  "color.background.accent.green.bolder.[default]": {
+    "primitive": "Green700",
+    "hex": "#1F845A"
+  },
+  "color.background.accent.green.bolder.hovered": {
+    "primitive": "Green800",
+    "hex": "#216E4E"
+  },
+  "color.background.accent.green.bolder.pressed": {
+    "primitive": "Green850",
+    "hex": "#19573D"
+  },
+  "color.background.accent.teal.subtlest.[default]": {
+    "primitive": "Teal100",
+    "hex": "#E7F9FF"
+  },
+  "color.background.accent.teal.subtlest.hovered": {
+    "primitive": "Teal200",
+    "hex": "#C6EDFB"
+  },
+  "color.background.accent.teal.subtlest.pressed": {
+    "primitive": "Teal250",
+    "hex": "#B1E4F7"
+  },
+  "color.background.accent.teal.subtler.[default]": {
+    "primitive": "Teal200",
+    "hex": "#C6EDFB"
+  },
+  "color.background.accent.teal.subtler.hovered": {
+    "primitive": "Teal250",
+    "hex": "#B1E4F7"
+  },
+  "color.background.accent.teal.subtler.pressed": {
+    "primitive": "Teal300",
+    "hex": "#9DD9EE"
+  },
+  "color.background.accent.teal.subtle.[default]": {
+    "primitive": "Teal400",
+    "hex": "#6CC3E0"
+  },
+  "color.background.accent.teal.subtle.hovered": {
+    "primitive": "Teal300",
+    "hex": "#9DD9EE"
+  },
+  "color.background.accent.teal.subtle.pressed": {
+    "primitive": "Teal250",
+    "hex": "#B1E4F7"
+  },
+  "color.background.accent.teal.bolder.[default]": {
+    "primitive": "Teal700",
+    "hex": "#227D9B"
+  },
+  "color.background.accent.teal.bolder.hovered": {
+    "primitive": "Teal800",
+    "hex": "#206A83"
+  },
+  "color.background.accent.teal.bolder.pressed": {
+    "primitive": "Teal850",
+    "hex": "#1A5265"
+  },
+  "color.background.accent.blue.subtlest.[default]": {
+    "primitive": "Blue100",
+    "hex": "#E9F2FE"
+  },
+  "color.background.accent.blue.subtlest.hovered": {
+    "primitive": "Blue200",
+    "hex": "#CFE1FD"
+  },
+  "color.background.accent.blue.subtlest.pressed": {
+    "primitive": "Blue250",
+    "hex": "#ADCBFB"
+  },
+  "color.background.accent.blue.subtler.[default]": {
+    "primitive": "Blue200",
+    "hex": "#CFE1FD"
+  },
+  "color.background.accent.blue.subtler.hovered": {
+    "primitive": "Blue250",
+    "hex": "#ADCBFB"
+  },
+  "color.background.accent.blue.subtler.pressed": {
+    "primitive": "Blue300",
+    "hex": "#8FB8F6"
+  },
+  "color.background.accent.blue.subtle.[default]": {
+    "primitive": "Blue400",
+    "hex": "#669DF1"
+  },
+  "color.background.accent.blue.subtle.hovered": {
+    "primitive": "Blue300",
+    "hex": "#8FB8F6"
+  },
+  "color.background.accent.blue.subtle.pressed": {
+    "primitive": "Blue250",
+    "hex": "#ADCBFB"
+  },
+  "color.background.accent.blue.bolder.[default]": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.background.accent.blue.bolder.hovered": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.background.accent.blue.bolder.pressed": {
+    "primitive": "Blue850",
+    "hex": "#144794"
+  },
+  "color.background.accent.purple.subtlest.[default]": {
+    "primitive": "Purple100",
+    "hex": "#F8EEFE"
+  },
+  "color.background.accent.purple.subtlest.hovered": {
+    "primitive": "Purple200",
+    "hex": "#EED7FC"
+  },
+  "color.background.accent.purple.subtlest.pressed": {
+    "primitive": "Purple250",
+    "hex": "#E3BDFA"
+  },
+  "color.background.accent.purple.subtler.[default]": {
+    "primitive": "Purple200",
+    "hex": "#EED7FC"
+  },
+  "color.background.accent.purple.subtler.hovered": {
+    "primitive": "Purple250",
+    "hex": "#E3BDFA"
+  },
+  "color.background.accent.purple.subtler.pressed": {
+    "primitive": "Purple300",
+    "hex": "#D8A0F7"
+  },
+  "color.background.accent.purple.subtle.[default]": {
+    "primitive": "Purple400",
+    "hex": "#C97CF4"
+  },
+  "color.background.accent.purple.subtle.hovered": {
+    "primitive": "Purple300",
+    "hex": "#D8A0F7"
+  },
+  "color.background.accent.purple.subtle.pressed": {
+    "primitive": "Purple250",
+    "hex": "#E3BDFA"
+  },
+  "color.background.accent.purple.bolder.[default]": {
+    "primitive": "Purple700",
+    "hex": "#964AC0"
+  },
+  "color.background.accent.purple.bolder.hovered": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.background.accent.purple.bolder.pressed": {
+    "primitive": "Purple850",
+    "hex": "#673286"
+  },
+  "color.background.accent.magenta.subtlest.[default]": {
+    "primitive": "Magenta100",
+    "hex": "#FFECF8"
+  },
+  "color.background.accent.magenta.subtlest.hovered": {
+    "primitive": "Magenta200",
+    "hex": "#FDD0EC"
+  },
+  "color.background.accent.magenta.subtlest.pressed": {
+    "primitive": "Magenta250",
+    "hex": "#FCB6E1"
+  },
+  "color.background.accent.magenta.subtler.[default]": {
+    "primitive": "Magenta200",
+    "hex": "#FDD0EC"
+  },
+  "color.background.accent.magenta.subtler.hovered": {
+    "primitive": "Magenta250",
+    "hex": "#FCB6E1"
+  },
+  "color.background.accent.magenta.subtler.pressed": {
+    "primitive": "Magenta300",
+    "hex": "#F797D2"
+  },
+  "color.background.accent.magenta.subtle.[default]": {
+    "primitive": "Magenta400",
+    "hex": "#E774BB"
+  },
+  "color.background.accent.magenta.subtle.hovered": {
+    "primitive": "Magenta300",
+    "hex": "#F797D2"
+  },
+  "color.background.accent.magenta.subtle.pressed": {
+    "primitive": "Magenta250",
+    "hex": "#FCB6E1"
+  },
+  "color.background.accent.magenta.bolder.[default]": {
+    "primitive": "Magenta700",
+    "hex": "#AE4787"
+  },
+  "color.background.accent.magenta.bolder.hovered": {
+    "primitive": "Magenta800",
+    "hex": "#943D73"
+  },
+  "color.background.accent.magenta.bolder.pressed": {
+    "primitive": "Magenta850",
+    "hex": "#77325B"
+  },
+  "color.background.accent.gray.subtlest.[default]": {
+    "primitive": "Neutral200",
+    "hex": "#F0F1F2"
+  },
+  "color.background.accent.gray.subtlest.hovered": {
+    "primitive": "Neutral300",
+    "hex": "#DDDEE1"
+  },
+  "color.background.accent.gray.subtlest.pressed": {
+    "primitive": "Neutral400",
+    "hex": "#B7B9BE"
+  },
+  "color.background.accent.gray.subtler.[default]": {
+    "primitive": "Neutral300",
+    "hex": "#DDDEE1"
+  },
+  "color.background.accent.gray.subtler.hovered": {
+    "primitive": "Neutral400",
+    "hex": "#B7B9BE"
+  },
+  "color.background.accent.gray.subtler.pressed": {
+    "primitive": "Neutral500",
+    "hex": "#8C8F97"
+  },
+  "color.background.accent.gray.subtle.[default]": {
+    "primitive": "Neutral500",
+    "hex": "#8C8F97"
+  },
+  "color.background.accent.gray.subtle.hovered": {
+    "primitive": "Neutral400",
+    "hex": "#B7B9BE"
+  },
+  "color.background.accent.gray.subtle.pressed": {
+    "primitive": "Neutral300",
+    "hex": "#DDDEE1"
+  },
+  "color.background.accent.gray.bolder.[default]": {
+    "primitive": "Neutral700",
+    "hex": "#6B6E76"
+  },
+  "color.background.accent.gray.bolder.hovered": {
+    "primitive": "Neutral800",
+    "hex": "#505258"
+  },
+  "color.background.accent.gray.bolder.pressed": {
+    "primitive": "Neutral900",
+    "hex": "#3B3D42"
+  },
+  "color.background.disabled": {
+    "primitive": "Neutral100A",
+    "hex": "#17171708"
+  },
+  "color.background.input.[default]": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "color.background.input.hovered": {
+    "primitive": "Neutral100",
+    "hex": "#F8F8F8"
+  },
+  "color.background.input.pressed": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "color.background.inverse.subtle.[default]": {
+    "primitive": "#00000029",
+    "hex": "#00000029"
+  },
+  "color.background.inverse.subtle.hovered": {
+    "primitive": "#0000003D",
+    "hex": "#0000003D"
+  },
+  "color.background.inverse.subtle.pressed": {
+    "primitive": "#00000052",
+    "hex": "#00000052"
+  },
+  "color.background.neutral.[default].[default]": {
+    "primitive": "Neutral200A",
+    "hex": "#0515240F"
+  },
+  "color.background.neutral.[default].hovered": {
+    "primitive": "Neutral300A",
+    "hex": "#0B120E24"
+  },
+  "color.background.neutral.[default].pressed": {
+    "primitive": "Neutral400A",
+    "hex": "#080F214A"
+  },
+  "color.background.neutral.subtle.[default]": {
+    "primitive": "transparent",
+    "hex": "#00000000"
+  },
+  "color.background.neutral.subtle.hovered": {
+    "primitive": "Neutral200A",
+    "hex": "#0515240F"
+  },
+  "color.background.neutral.subtle.pressed": {
+    "primitive": "Neutral300A",
+    "hex": "#0B120E24"
+  },
+  "color.background.neutral.bold.[default]": {
+    "primitive": "Neutral1000",
+    "hex": "#292A2E"
+  },
+  "color.background.neutral.bold.hovered": {
+    "primitive": "Neutral900",
+    "hex": "#3B3D42"
+  },
+  "color.background.neutral.bold.pressed": {
+    "primitive": "Neutral800",
+    "hex": "#505258"
+  },
+  "color.background.selected.[default].[default]": {
+    "primitive": "Blue100",
+    "hex": "#E9F2FE"
+  },
+  "color.background.selected.[default].hovered": {
+    "primitive": "Blue200",
+    "hex": "#CFE1FD"
+  },
+  "color.background.selected.[default].pressed": {
+    "primitive": "Blue300",
+    "hex": "#8FB8F6"
+  },
+  "color.background.selected.bold.[default]": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.background.selected.bold.hovered": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.background.selected.bold.pressed": {
+    "primitive": "Blue900",
+    "hex": "#123263"
+  },
+  "color.background.brand.subtlest.[default]": {
+    "primitive": "Blue100",
+    "hex": "#E9F2FE"
+  },
+  "color.background.brand.subtlest.hovered": {
+    "primitive": "Blue200",
+    "hex": "#CFE1FD"
+  },
+  "color.background.brand.subtlest.pressed": {
+    "primitive": "Blue250",
+    "hex": "#ADCBFB"
+  },
+  "color.background.brand.bold.[default]": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.background.brand.bold.hovered": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.background.brand.bold.pressed": {
+    "primitive": "Blue850",
+    "hex": "#144794"
+  },
+  "color.background.brand.boldest.[default]": {
+    "primitive": "Blue1000",
+    "hex": "#1C2B42"
+  },
+  "color.background.brand.boldest.hovered": {
+    "primitive": "Blue900",
+    "hex": "#123263"
+  },
+  "color.background.brand.boldest.pressed": {
+    "primitive": "Blue850",
+    "hex": "#144794"
+  },
+  "color.background.danger.[default].[default]": {
+    "primitive": "Red100",
+    "hex": "#FFECEB"
+  },
+  "color.background.danger.[default].hovered": {
+    "primitive": "Red200",
+    "hex": "#FFD5D2"
+  },
+  "color.background.danger.[default].pressed": {
+    "primitive": "Red250",
+    "hex": "#FFB8B2"
+  },
+  "color.background.danger.subtler.[default]": {
+    "primitive": "Red200",
+    "hex": "#FFD5D2"
+  },
+  "color.background.danger.subtler.hovered": {
+    "primitive": "Red250",
+    "hex": "#FFB8B2"
+  },
+  "color.background.danger.subtler.pressed": {
+    "primitive": "Red300",
+    "hex": "#FD9891"
+  },
+  "color.background.danger.bold.[default]": {
+    "primitive": "Red700",
+    "hex": "#C9372C"
+  },
+  "color.background.danger.bold.hovered": {
+    "primitive": "Red800",
+    "hex": "#AE2E24"
+  },
+  "color.background.danger.bold.pressed": {
+    "primitive": "Red850",
+    "hex": "#872821"
+  },
+  "color.background.warning.[default].[default]": {
+    "primitive": "Orange100",
+    "hex": "#FFF5DB"
+  },
+  "color.background.warning.[default].hovered": {
+    "primitive": "Orange200",
+    "hex": "#FCE4A6"
+  },
+  "color.background.warning.[default].pressed": {
+    "primitive": "Orange250",
+    "hex": "#FBD779"
+  },
+  "color.background.warning.subtler.[default]": {
+    "primitive": "Orange200",
+    "hex": "#FCE4A6"
+  },
+  "color.background.warning.subtler.hovered": {
+    "primitive": "Orange250",
+    "hex": "#FBD779"
+  },
+  "color.background.warning.subtler.pressed": {
+    "primitive": "Orange300",
+    "hex": "#FBC828"
+  },
+  "color.background.warning.bold.[default]": {
+    "primitive": "Orange300",
+    "hex": "#FBC828"
+  },
+  "color.background.warning.bold.hovered": {
+    "primitive": "Orange400",
+    "hex": "#FCA700"
+  },
+  "color.background.warning.bold.pressed": {
+    "primitive": "Orange500",
+    "hex": "#F68909"
+  },
+  "color.background.success.[default].[default]": {
+    "primitive": "Lime100",
+    "hex": "#EFFFD6"
+  },
+  "color.background.success.[default].hovered": {
+    "primitive": "Lime200",
+    "hex": "#D3F1A7"
+  },
+  "color.background.success.[default].pressed": {
+    "primitive": "Lime250",
+    "hex": "#BDE97C"
+  },
+  "color.background.success.subtler.[default]": {
+    "primitive": "Lime200",
+    "hex": "#D3F1A7"
+  },
+  "color.background.success.subtler.hovered": {
+    "primitive": "Lime250",
+    "hex": "#BDE97C"
+  },
+  "color.background.success.subtler.pressed": {
+    "primitive": "Lime300",
+    "hex": "#B3DF72"
+  },
+  "color.background.success.bold.[default]": {
+    "primitive": "Lime700",
+    "hex": "#5B7F24"
+  },
+  "color.background.success.bold.hovered": {
+    "primitive": "Lime800",
+    "hex": "#4C6B1F"
+  },
+  "color.background.success.bold.pressed": {
+    "primitive": "Lime850",
+    "hex": "#3F5224"
+  },
+  "color.background.discovery.[default].[default]": {
+    "primitive": "Purple100",
+    "hex": "#F8EEFE"
+  },
+  "color.background.discovery.[default].hovered": {
+    "primitive": "Purple200",
+    "hex": "#EED7FC"
+  },
+  "color.background.discovery.[default].pressed": {
+    "primitive": "Purple250",
+    "hex": "#E3BDFA"
+  },
+  "color.background.discovery.subtler.[default]": {
+    "primitive": "Purple200",
+    "hex": "#EED7FC"
+  },
+  "color.background.discovery.subtler.hovered": {
+    "primitive": "Purple250",
+    "hex": "#E3BDFA"
+  },
+  "color.background.discovery.subtler.pressed": {
+    "primitive": "Purple300",
+    "hex": "#D8A0F7"
+  },
+  "color.background.discovery.bold.[default]": {
+    "primitive": "Purple700",
+    "hex": "#964AC0"
+  },
+  "color.background.discovery.bold.hovered": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.background.discovery.bold.pressed": {
+    "primitive": "Purple850",
+    "hex": "#673286"
+  },
+  "color.background.information.[default].[default]": {
+    "primitive": "Blue100",
+    "hex": "#E9F2FE"
+  },
+  "color.background.information.[default].hovered": {
+    "primitive": "Blue200",
+    "hex": "#CFE1FD"
+  },
+  "color.background.information.[default].pressed": {
+    "primitive": "Blue250",
+    "hex": "#ADCBFB"
+  },
+  "color.background.information.subtler.[default]": {
+    "primitive": "Blue200",
+    "hex": "#CFE1FD"
+  },
+  "color.background.information.subtler.hovered": {
+    "primitive": "Blue250",
+    "hex": "#ADCBFB"
+  },
+  "color.background.information.subtler.pressed": {
+    "primitive": "Blue300",
+    "hex": "#8FB8F6"
+  },
+  "color.background.information.bold.[default]": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.background.information.bold.hovered": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.background.information.bold.pressed": {
+    "primitive": "Blue850",
+    "hex": "#144794"
+  },
+  "color.blanket.[default]": {
+    "primitive": "Neutral500A",
+    "hex": "#050C1F75"
+  },
+  "color.blanket.selected": {
+    "primitive": "#388BFF14",
+    "hex": "#388BFF14"
+  },
+  "color.blanket.danger": {
+    "primitive": "#EF5C4814",
+    "hex": "#EF5C4814"
+  },
+  "color.interaction.hovered": {
+    "primitive": "#00000029",
+    "hex": "#00000029"
+  },
+  "color.interaction.pressed": {
+    "primitive": "#00000052",
+    "hex": "#00000052"
+  },
+  "color.skeleton.[default]": {
+    "primitive": "Neutral200A",
+    "hex": "#0515240F"
+  },
+  "color.skeleton.subtle": {
+    "primitive": "Neutral100A",
+    "hex": "#17171708"
+  },
+  "color.chart.categorical.1.[default]": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.chart.categorical.1.hovered": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.chart.categorical.2.[default]": {
+    "primitive": "Lime500",
+    "hex": "#82B536"
+  },
+  "color.chart.categorical.2.hovered": {
+    "primitive": "Lime600",
+    "hex": "#6A9A23"
+  },
+  "color.chart.categorical.3.[default]": {
+    "primitive": "Purple500",
+    "hex": "#BF63F3"
+  },
+  "color.chart.categorical.3.hovered": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.chart.categorical.4.[default]": {
+    "primitive": "Orange500",
+    "hex": "#F68909"
+  },
+  "color.chart.categorical.4.hovered": {
+    "primitive": "Orange600",
+    "hex": "#E06C00"
+  },
+  "color.chart.categorical.5.[default]": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.chart.categorical.5.hovered": {
+    "primitive": "Blue900",
+    "hex": "#123263"
+  },
+  "color.chart.categorical.6.[default]": {
+    "primitive": "Purple700",
+    "hex": "#964AC0"
+  },
+  "color.chart.categorical.6.hovered": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.chart.categorical.7.[default]": {
+    "primitive": "Teal500",
+    "hex": "#42B2D7"
+  },
+  "color.chart.categorical.7.hovered": {
+    "primitive": "Teal600",
+    "hex": "#2898BD"
+  },
+  "color.chart.categorical.8.[default]": {
+    "primitive": "Orange700",
+    "hex": "#BD5B00"
+  },
+  "color.chart.categorical.8.hovered": {
+    "primitive": "Orange850",
+    "hex": "#7A3B00"
+  },
+  "color.chart.lime.bold.[default]": {
+    "primitive": "Lime600",
+    "hex": "#6A9A23"
+  },
+  "color.chart.lime.bold.hovered": {
+    "primitive": "Lime700",
+    "hex": "#5B7F24"
+  },
+  "color.chart.lime.bolder.[default]": {
+    "primitive": "Lime700",
+    "hex": "#5B7F24"
+  },
+  "color.chart.lime.bolder.hovered": {
+    "primitive": "Lime800",
+    "hex": "#4C6B1F"
+  },
+  "color.chart.lime.boldest.[default]": {
+    "primitive": "Lime800",
+    "hex": "#4C6B1F"
+  },
+  "color.chart.lime.boldest.hovered": {
+    "primitive": "Lime900",
+    "hex": "#37471F"
+  },
+  "color.chart.neutral.[default]": {
+    "primitive": "Neutral500",
+    "hex": "#8C8F97"
+  },
+  "color.chart.neutral.hovered": {
+    "primitive": "Neutral600",
+    "hex": "#7D818A"
+  },
+  "color.chart.red.bold.[default]": {
+    "primitive": "Red500",
+    "hex": "#F15B50"
+  },
+  "color.chart.red.bold.hovered": {
+    "primitive": "Red600",
+    "hex": "#E2483D"
+  },
+  "color.chart.red.bolder.[default]": {
+    "primitive": "Red600",
+    "hex": "#E2483D"
+  },
+  "color.chart.red.bolder.hovered": {
+    "primitive": "Red700",
+    "hex": "#C9372C"
+  },
+  "color.chart.red.boldest.[default]": {
+    "primitive": "Red800",
+    "hex": "#AE2E24"
+  },
+  "color.chart.red.boldest.hovered": {
+    "primitive": "Red900",
+    "hex": "#5D1F1A"
+  },
+  "color.chart.orange.bold.[default]": {
+    "primitive": "Orange600",
+    "hex": "#E06C00"
+  },
+  "color.chart.orange.bold.hovered": {
+    "primitive": "Orange700",
+    "hex": "#BD5B00"
+  },
+  "color.chart.orange.bolder.[default]": {
+    "primitive": "Orange700",
+    "hex": "#BD5B00"
+  },
+  "color.chart.orange.bolder.hovered": {
+    "primitive": "Orange800",
+    "hex": "#9E4C00"
+  },
+  "color.chart.orange.boldest.[default]": {
+    "primitive": "Orange850",
+    "hex": "#7A3B00"
+  },
+  "color.chart.orange.boldest.hovered": {
+    "primitive": "Orange900",
+    "hex": "#693200"
+  },
+  "color.chart.yellow.bold.[default]": {
+    "primitive": "Yellow600",
+    "hex": "#B38600"
+  },
+  "color.chart.yellow.bold.hovered": {
+    "primitive": "Yellow700",
+    "hex": "#946F00"
+  },
+  "color.chart.yellow.bolder.[default]": {
+    "primitive": "Yellow700",
+    "hex": "#946F00"
+  },
+  "color.chart.yellow.bolder.hovered": {
+    "primitive": "Yellow800",
+    "hex": "#7F5F01"
+  },
+  "color.chart.yellow.boldest.[default]": {
+    "primitive": "Yellow800",
+    "hex": "#7F5F01"
+  },
+  "color.chart.yellow.boldest.hovered": {
+    "primitive": "Yellow900",
+    "hex": "#533F04"
+  },
+  "color.chart.green.bold.[default]": {
+    "primitive": "Green600",
+    "hex": "#22A06B"
+  },
+  "color.chart.green.bold.hovered": {
+    "primitive": "Green700",
+    "hex": "#1F845A"
+  },
+  "color.chart.green.bolder.[default]": {
+    "primitive": "Green700",
+    "hex": "#1F845A"
+  },
+  "color.chart.green.bolder.hovered": {
+    "primitive": "Green800",
+    "hex": "#216E4E"
+  },
+  "color.chart.green.boldest.[default]": {
+    "primitive": "Green800",
+    "hex": "#216E4E"
+  },
+  "color.chart.green.boldest.hovered": {
+    "primitive": "Green900",
+    "hex": "#164B35"
+  },
+  "color.chart.teal.bold.[default]": {
+    "primitive": "Teal600",
+    "hex": "#2898BD"
+  },
+  "color.chart.teal.bold.hovered": {
+    "primitive": "Teal700",
+    "hex": "#227D9B"
+  },
+  "color.chart.teal.bolder.[default]": {
+    "primitive": "Teal700",
+    "hex": "#227D9B"
+  },
+  "color.chart.teal.bolder.hovered": {
+    "primitive": "Teal800",
+    "hex": "#206A83"
+  },
+  "color.chart.teal.boldest.[default]": {
+    "primitive": "Teal800",
+    "hex": "#206A83"
+  },
+  "color.chart.teal.boldest.hovered": {
+    "primitive": "Teal900",
+    "hex": "#164555"
+  },
+  "color.chart.blue.bold.[default]": {
+    "primitive": "Blue500",
+    "hex": "#4688EC"
+  },
+  "color.chart.blue.bold.hovered": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.chart.blue.bolder.[default]": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.chart.blue.bolder.hovered": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.chart.blue.boldest.[default]": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.chart.blue.boldest.hovered": {
+    "primitive": "Blue900",
+    "hex": "#123263"
+  },
+  "color.chart.purple.bold.[default]": {
+    "primitive": "Purple500",
+    "hex": "#BF63F3"
+  },
+  "color.chart.purple.bold.hovered": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.chart.purple.bolder.[default]": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.chart.purple.bolder.hovered": {
+    "primitive": "Purple700",
+    "hex": "#964AC0"
+  },
+  "color.chart.purple.boldest.[default]": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.chart.purple.boldest.hovered": {
+    "primitive": "Purple900",
+    "hex": "#48245D"
+  },
+  "color.chart.magenta.bold.[default]": {
+    "primitive": "Magenta500",
+    "hex": "#DA62AC"
+  },
+  "color.chart.magenta.bold.hovered": {
+    "primitive": "Magenta600",
+    "hex": "#CD519D"
+  },
+  "color.chart.magenta.bolder.[default]": {
+    "primitive": "Magenta600",
+    "hex": "#CD519D"
+  },
+  "color.chart.magenta.bolder.hovered": {
+    "primitive": "Magenta700",
+    "hex": "#AE4787"
+  },
+  "color.chart.magenta.boldest.[default]": {
+    "primitive": "Magenta800",
+    "hex": "#943D73"
+  },
+  "color.chart.magenta.boldest.hovered": {
+    "primitive": "Magenta900",
+    "hex": "#50253F"
+  },
+  "color.chart.gray.bold.[default]": {
+    "primitive": "Neutral500",
+    "hex": "#8C8F97"
+  },
+  "color.chart.gray.bold.hovered": {
+    "primitive": "Neutral600",
+    "hex": "#7D818A"
+  },
+  "color.chart.gray.bolder.[default]": {
+    "primitive": "Neutral600",
+    "hex": "#7D818A"
+  },
+  "color.chart.gray.bolder.hovered": {
+    "primitive": "Neutral700",
+    "hex": "#6B6E76"
+  },
+  "color.chart.gray.boldest.[default]": {
+    "primitive": "Neutral800",
+    "hex": "#505258"
+  },
+  "color.chart.gray.boldest.hovered": {
+    "primitive": "Neutral900",
+    "hex": "#3B3D42"
+  },
+  "color.chart.brand.[default]": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.chart.brand.hovered": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.chart.danger.[default].[default]": {
+    "primitive": "Red600",
+    "hex": "#E2483D"
+  },
+  "color.chart.danger.[default].hovered": {
+    "primitive": "Red700",
+    "hex": "#C9372C"
+  },
+  "color.chart.danger.bold.[default]": {
+    "primitive": "Red850",
+    "hex": "#872821"
+  },
+  "color.chart.danger.bold.hovered": {
+    "primitive": "Red900",
+    "hex": "#5D1F1A"
+  },
+  "color.chart.warning.[default].[default]": {
+    "primitive": "Orange500",
+    "hex": "#F68909"
+  },
+  "color.chart.warning.[default].hovered": {
+    "primitive": "Orange600",
+    "hex": "#E06C00"
+  },
+  "color.chart.warning.bold.[default]": {
+    "primitive": "Orange700",
+    "hex": "#BD5B00"
+  },
+  "color.chart.warning.bold.hovered": {
+    "primitive": "Orange800",
+    "hex": "#9E4C00"
+  },
+  "color.chart.success.[default].[default]": {
+    "primitive": "Lime500",
+    "hex": "#82B536"
+  },
+  "color.chart.success.[default].hovered": {
+    "primitive": "Lime600",
+    "hex": "#6A9A23"
+  },
+  "color.chart.success.bold.[default]": {
+    "primitive": "Lime700",
+    "hex": "#5B7F24"
+  },
+  "color.chart.success.bold.hovered": {
+    "primitive": "Lime800",
+    "hex": "#4C6B1F"
+  },
+  "color.chart.discovery.[default].[default]": {
+    "primitive": "Purple500",
+    "hex": "#BF63F3"
+  },
+  "color.chart.discovery.[default].hovered": {
+    "primitive": "Purple600",
+    "hex": "#AF59E1"
+  },
+  "color.chart.discovery.bold.[default]": {
+    "primitive": "Purple800",
+    "hex": "#803FA5"
+  },
+  "color.chart.discovery.bold.hovered": {
+    "primitive": "Purple700",
+    "hex": "#964AC0"
+  },
+  "color.chart.information.[default].[default]": {
+    "primitive": "Blue600",
+    "hex": "#357DE8"
+  },
+  "color.chart.information.[default].hovered": {
+    "primitive": "Blue700",
+    "hex": "#1868DB"
+  },
+  "color.chart.information.bold.[default]": {
+    "primitive": "Blue800",
+    "hex": "#1558BC"
+  },
+  "color.chart.information.bold.hovered": {
+    "primitive": "Blue900",
+    "hex": "#123263"
+  },
+  "elevation.surface.[default].[default]": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "elevation.surface.[default].hovered": {
+    "primitive": "Neutral200",
+    "hex": "#F0F1F2"
+  },
+  "elevation.surface.[default].pressed": {
+    "primitive": "Neutral300",
+    "hex": "#DDDEE1"
+  },
+  "elevation.surface.overlay.[default]": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "elevation.surface.overlay.hovered": {
+    "primitive": "Neutral200",
+    "hex": "#F0F1F2"
+  },
+  "elevation.surface.overlay.pressed": {
+    "primitive": "Neutral300",
+    "hex": "#DDDEE1"
+  },
+  "elevation.surface.raised.[default]": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  },
+  "elevation.surface.raised.hovered": {
+    "primitive": "Neutral200",
+    "hex": "#F0F1F2"
+  },
+  "elevation.surface.raised.pressed": {
+    "primitive": "Neutral300",
+    "hex": "#DDDEE1"
+  },
+  "elevation.surface.sunken": {
+    "primitive": "Neutral100",
+    "hex": "#F8F8F8"
+  },
+  "elevation.shadow.overflow.perimeter": {
+    "primitive": "#1E1F211f",
+    "hex": "#1E1F211f"
+  },
+  "elevation.shadow.overflow.spread": {
+    "primitive": "#1E1F2129",
+    "hex": "#1E1F2129"
+  },
+  "opacity.disabled": {
+    "primitive": "Opacity40",
+    "hex": "0.4"
+  },
+  "opacity.loading": {
+    "primitive": "Opacity20",
+    "hex": "0.2"
+  },
+  "utility.UNSAFE.transparent": {
+    "primitive": "transparent",
+    "hex": "transparent"
+  },
+  "utility.elevation.surface.current": {
+    "primitive": "Neutral0",
+    "hex": "#FFFFFF"
+  }
+}

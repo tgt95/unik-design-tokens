@@ -45,10 +45,10 @@ async function loadFonts() {
     FONT_BOLD = FALLBACK_BOLD
     try {
       await figma.loadFontAsync(FONT_MAIN)
-    } catch (e) {}
+    } catch (e) { }
     try {
       await figma.loadFontAsync(FONT_BOLD)
-    } catch (e) {}
+    } catch (e) { }
   }
 }
 
@@ -60,6 +60,58 @@ async function loadFonts() {
 function rgbaToPaint(rgba) {
   var opacity = rgba && typeof rgba.a === 'number' ? rgba.a : 1
   return [{ type: 'SOLID', color: { r: rgba.r, g: rgba.g, b: rgba.b }, opacity: opacity }]
+}
+
+// Return #RRGGBB or #RRGGBBAA (when alpha < 1)
+function rgbaToHexWithAlpha(v) {
+  var r = Math.round(v.r * 255)
+  var g = Math.round(v.g * 255)
+  var b = Math.round(v.b * 255)
+  var a = Math.round((v.a !== undefined ? v.a : 1) * 255)
+
+  var hex =
+    '#' +
+    [r, g, b]
+      .map(function (n) {
+        return n.toString(16).padStart(2, '0')
+      })
+      .join('')
+      .toUpperCase()
+
+  if (a < 255) {
+    return (hex + a.toString(16).padStart(2, '0')).toUpperCase()
+  }
+  return hex
+}
+
+// RGBA formatter
+function rgbaToCss(v) {
+  var r = Math.round(v.r * 255)
+  var g = Math.round(v.g * 255)
+  var b = Math.round(v.b * 255)
+  var a = v.a !== undefined ? Math.round(v.a * 1000) / 1000 : 1
+  return 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')'
+}
+
+
+// Improved hex converter (now returns 6-digit or 8-digit hex)
+function rgbaToHexFull(v) {
+  const r = Math.round(v.r * 255)
+  const g = Math.round(v.g * 255)
+  const b = Math.round(v.b * 255)
+  const a = Math.round((v.a !== undefined ? v.a : 1) * 255)
+
+  const hex = (
+    '#' +
+    [r, g, b].map(n => n.toString(16).padStart(2, '0')).join('')
+  ).toUpperCase()
+
+  // If alpha < 1, append AA
+  if (a < 255) {
+    return (hex + a.toString(16).padStart(2, '0')).toUpperCase()
+  }
+
+  return hex
 }
 
 // Quick checker that a value looks like a Figma RGBA object.
@@ -227,6 +279,7 @@ function makeUnitsRow(val, u) {
 
 // For color variables: draw a swatch + hex code (or "—" if missing).
 function makeColorRow(raw, res) {
+  // ---- Swatch container (same UI as your old code) -----------------
   var rectContainer = figma.createFrame()
   rectContainer.resizeWithoutConstraints(12, 12)
   rectContainer.cornerRadius = 4
@@ -244,22 +297,57 @@ function makeColorRow(raw, res) {
   row.counterAxisSizingMode = 'AUTO'
   row.itemSpacing = 8
   row.fills = []
+
   var rect = figma.createRectangle()
   rect.layoutGrow = 1
   rect.layoutAlign = 'STRETCH'
   rectContainer.appendChild(rect)
-  // rect.resize(12, 12)
-  // rect.cornerRadius = 4
-  // rect.strokes = [{ type: 'SOLID', color: { r: 0.9, g: 0.9, b: 0.9 } }]
-  // rect.strokeWeight = 0.5
-  if (isRGBA(res)) rect.fills = rgbaToPaint(res)
-  else if (isRGBA(raw)) rect.fills = rgbaToPaint(raw)
-  else rect.fills = [{ type: 'SOLID', color: { r: 0.9, g: 0.9, b: 0.9 } }]
+
+  // Choose which color to display: resolved first, then raw
+  var src = null
+  if (isRGBA(res)) src = res
+  else if (isRGBA(raw)) src = raw
+
+  if (src) {
+    rect.fills = rgbaToPaint(src)
+  } else {
+    rect.fills = [{ type: 'SOLID', color: { r: 0.9, g: 0.9, b: 0.9 } }]
+  }
+
   row.appendChild(rectContainer)
-  // row.appendChild(rect)
-  row.appendChild(makeText(isRGBA(res) ? rgbaToHex(res) : '—', { fontSize: 12, opacity: 0.9 }))
+
+  // ---- Text labels: hex (+ rgba if alpha) --------------------------
+  if (!src) {
+    row.appendChild(makeText('—', { fontSize: 12, opacity: 0.9 }))
+    return row
+  }
+
+  var hex = rgbaToHexWithAlpha(src)
+  var a = src.a !== undefined ? src.a : 1
+
+  // If there is transparency: show hex with alpha + rgba() below
+  if (a < 1) {
+    var rgbaLabel = rgbaToCss(src)
+    var stack = figma.createFrame()
+    stack.layoutMode = 'VERTICAL'
+    stack.primaryAxisSizingMode = 'AUTO'
+    stack.counterAxisSizingMode = 'AUTO'
+    stack.itemSpacing = 2
+    stack.fills = []
+
+    stack.appendChild(makeText(hex, { fontSize: 12, opacity: 0.9 }))   // #00000030
+    stack.appendChild(makeText(rgbaLabel, { fontSize: 11, opacity: 0.7 })) // rgba(0,0,0,0.19)
+
+    row.appendChild(stack)
+  } else {
+    // Opaque color: just hex
+    row.appendChild(makeText(hex, { fontSize: 12, opacity: 0.9 }))
+  }
+
   return row
 }
+
+
 
 // ---------------------------------------------------------------
 // ALIAS BLOCK (NAME + CHAIN)
@@ -515,7 +603,7 @@ async function buildTable(selected, u) {
       var typeLabel = makeText(vobj.resolvedType || '—', { fontSize: 12, opacity: 0.7 })
       var tokenName = makeText(cssTokenNameFromVarName(vobj.name), { fontSize: 12 })
       var ownDot = dotNameFromVarName(vobj.name)
-      
+
       tokenName.layoutGrow = 1
 
       // Mode columns: resolve alias chain for each mode, then render value.
@@ -548,7 +636,7 @@ async function buildTable(selected, u) {
         [makeCell(typeLabel, 80), makeCell(tokenName, 280)].concat(modeCells).concat([makeCell(desc, 400)])
       )
       row.name = 'Row – ' + cssTokenNameFromVarName(vobj.name)
-      if (k === varsInCollection.length -1) row.bottomLeftRadius = row.bottomRightRadius = 8
+      if (k === varsInCollection.length - 1) row.bottomLeftRadius = row.bottomRightRadius = 8
       bodyGroup.appendChild(row)
     }
   }
@@ -575,30 +663,30 @@ figma.ui.onmessage = async function (msg) {
   }
 }
 
-// ---------------------------------------------------------------------------
-// INITIALIZATION (runs once when plugin is opened)
-// ---------------------------------------------------------------------------
-// 1. Fetch all collections + variables (async).
-// 2. Count how many variables belong to each collection.
-// 3. Send this list + counts to the UI so it can render the collection list.
-;(async function init() {
-  var allVars = await figma.variables.getLocalVariablesAsync()
-  var allCols = await figma.variables.getLocalVariableCollectionsAsync()
-  var varCountByCol = {}
-  for (var i = 0; i < allVars.length; i++) {
-    var id = allVars[i].variableCollectionId
-    varCountByCol[id] = (varCountByCol[id] || 0) + 1
-  }
-  var cols = allCols.map(function (c) {
-    return {
-      id: c.id,
-      name: c.name,
-      modes: c.modes.map(function (m) {
-        return m.name
-      }),
-      count: varCountByCol[c.id] || 0
+  // ---------------------------------------------------------------------------
+  // INITIALIZATION (runs once when plugin is opened)
+  // ---------------------------------------------------------------------------
+  // 1. Fetch all collections + variables (async).
+  // 2. Count how many variables belong to each collection.
+  // 3. Send this list + counts to the UI so it can render the collection list.
+  ; (async function init() {
+    var allVars = await figma.variables.getLocalVariablesAsync()
+    var allCols = await figma.variables.getLocalVariableCollectionsAsync()
+    var varCountByCol = {}
+    for (var i = 0; i < allVars.length; i++) {
+      var id = allVars[i].variableCollectionId
+      varCountByCol[id] = (varCountByCol[id] || 0) + 1
     }
-  })
-  figma.showUI(__html__, { width: 480, height: 560 })
-  figma.ui.postMessage({ type: 'COLLECTIONS', collections: cols })
-})()
+    var cols = allCols.map(function (c) {
+      return {
+        id: c.id,
+        name: c.name,
+        modes: c.modes.map(function (m) {
+          return m.name
+        }),
+        count: varCountByCol[c.id] || 0
+      }
+    })
+    figma.showUI(__html__, { width: 480, height: 560 })
+    figma.ui.postMessage({ type: 'COLLECTIONS', collections: cols })
+  })()

@@ -1,0 +1,359 @@
+{
+  "#cecfd2": [
+    "DarkNeutral1000"
+  ],
+  "#b3df72": [
+    "Lime300"
+  ],
+  "#d3f1a7": [
+    "Lime200"
+  ],
+  "#fd9891": [
+    "Red300"
+  ],
+  "#ffd5d2": [
+    "Red200"
+  ],
+  "#fbc828": [
+    "Orange300"
+  ],
+  "#fce4a6": [
+    "Orange200"
+  ],
+  "#eed12b": [
+    "Yellow300"
+  ],
+  "#f5e989": [
+    "Yellow200"
+  ],
+  "#7ee2b8": [
+    "Green300"
+  ],
+  "#baf3db": [
+    "Green200"
+  ],
+  "#9dd9ee": [
+    "Teal300"
+  ],
+  "#c6edfb": [
+    "Teal200"
+  ],
+  "#8fb8f6": [
+    "Blue300"
+  ],
+  "#cfe1fd": [
+    "Blue200"
+  ],
+  "#d8a0f7": [
+    "Purple300"
+  ],
+  "#eed7fc": [
+    "Purple200"
+  ],
+  "#f797d2": [
+    "Magenta300"
+  ],
+  "#fdd0ec": [
+    "Magenta200"
+  ],
+  "#a9abaf": [
+    "DarkNeutral800"
+  ],
+  "#e2e3e4": [
+    "DarkNeutral1100"
+  ],
+  "#e5e9f640": [
+    "DarkNeutral400A"
+  ],
+  "#1f1f21": [
+    "DarkNeutral100"
+  ],
+  "#669df1": [
+    "Blue400"
+  ],
+  "#96999e": [
+    "DarkNeutral700"
+  ],
+  "#82b536": [
+    "Lime500"
+  ],
+  "#e2483d": [
+    "Red600"
+  ],
+  "#f68909": [
+    "Orange500"
+  ],
+  "#2abb7f": [
+    "Green500"
+  ],
+  "#42b2d7": [
+    "Teal500"
+  ],
+  "#4688ec": [
+    "Blue500"
+  ],
+  "#bf63f3": [
+    "Purple500"
+  ],
+  "#da62ac": [
+    "Magenta500"
+  ],
+  "#7e8188": [
+    "DarkNeutral600"
+  ],
+  "#f15b50": [
+    "Red500"
+  ],
+  "#e3e4f21f": [
+    "DarkNeutral300A"
+  ],
+  "#cf9f02": [
+    "Yellow500"
+  ],
+  "#ceced912": [
+    "DarkNeutral200A"
+  ],
+  "#18191a": [
+    "DarkNeutral0"
+  ],
+  "#28311b": [
+    "Lime1000"
+  ],
+  "#37471f": [
+    "Lime900"
+  ],
+  "#3f5224": [
+    "Lime850"
+  ],
+  "#4c6b1f": [
+    "Lime800"
+  ],
+  "#94c748": [
+    "Lime400"
+  ],
+  "#bde97c": [
+    "Lime250"
+  ],
+  "#42221f": [
+    "Red1000"
+  ],
+  "#5d1f1a": [
+    "Red900"
+  ],
+  "#872821": [
+    "Red850"
+  ],
+  "#ae2e24": [
+    "Red800"
+  ],
+  "#f87168": [
+    "Red400"
+  ],
+  "#ffb8b2": [
+    "Red250"
+  ],
+  "#3a2c1f": [
+    "Orange1000"
+  ],
+  "#693200": [
+    "Orange900"
+  ],
+  "#7a3b00": [
+    "Orange850"
+  ],
+  "#9e4c00": [
+    "Orange800"
+  ],
+  "#fca700": [
+    "Orange400"
+  ],
+  "#fbd779": [
+    "Orange250"
+  ],
+  "#332e1b": [
+    "Yellow1000"
+  ],
+  "#533f04": [
+    "Yellow900"
+  ],
+  "#614a05": [
+    "Yellow850"
+  ],
+  "#7f5f01": [
+    "Yellow800"
+  ],
+  "#ddb30e": [
+    "Yellow400"
+  ],
+  "#efdd4e": [
+    "Yellow250"
+  ],
+  "#1c3329": [
+    "Green1000"
+  ],
+  "#164b35": [
+    "Green900"
+  ],
+  "#19573d": [
+    "Green850"
+  ],
+  "#216e4e": [
+    "Green800"
+  ],
+  "#4bce97": [
+    "Green400"
+  ],
+  "#97edc9": [
+    "Green250"
+  ],
+  "#1e3137": [
+    "Teal1000"
+  ],
+  "#164555": [
+    "Teal900"
+  ],
+  "#1a5265": [
+    "Teal850"
+  ],
+  "#206a83": [
+    "Teal800"
+  ],
+  "#6cc3e0": [
+    "Teal400"
+  ],
+  "#b1e4f7": [
+    "Teal250"
+  ],
+  "#1c2b42": [
+    "Blue1000"
+  ],
+  "#123263": [
+    "Blue900"
+  ],
+  "#144794": [
+    "Blue850"
+  ],
+  "#1558bc": [
+    "Blue800"
+  ],
+  "#adcbfb": [
+    "Blue250"
+  ],
+  "#35243f": [
+    "Purple1000"
+  ],
+  "#48245d": [
+    "Purple900"
+  ],
+  "#673286": [
+    "Purple850"
+  ],
+  "#803fa5": [
+    "Purple800"
+  ],
+  "#c97cf4": [
+    "Purple400"
+  ],
+  "#e3bdfa": [
+    "Purple250"
+  ],
+  "#3d2232": [
+    "Magenta1000"
+  ],
+  "#50253f": [
+    "Magenta900"
+  ],
+  "#77325b": [
+    "Magenta850"
+  ],
+  "#943d73": [
+    "Magenta800"
+  ],
+  "#e774bb": [
+    "Magenta400"
+  ],
+  "#fcb6e1": [
+    "Magenta250"
+  ],
+  "#303134": [
+    "DarkNeutral300"
+  ],
+  "#3d3f43": [
+    "DarkNeutral350"
+  ],
+  "#4b4d51": [
+    "DarkNeutral400"
+  ],
+  "#63666b": [
+    "DarkNeutral500"
+  ],
+  "#bfc1c4": [
+    "DarkNeutral900"
+  ],
+  "#bdbdbd0a": [
+    "DarkNeutral100A"
+  ],
+  "#242528": [
+    "DarkNeutral200"
+  ],
+  "#2b2c2f": [
+    "DarkNeutral250"
+  ],
+  "#ffffff29": [
+    "#FFFFFF29"
+  ],
+  "#ffffff3d": [
+    "#FFFFFF3D"
+  ],
+  "#ffffff52": [
+    "#FFFFFF52"
+  ],
+  "#00000000": [
+    "transparent"
+  ],
+  "#e9f2fe": [
+    "Blue100"
+  ],
+  "#10121499": [
+    "#10121499"
+  ],
+  "#1d7afc14": [
+    "#1D7AFC14"
+  ],
+  "#e3493514": [
+    "#E3493514"
+  ],
+  "#ffffff33": [
+    "#ffffff33"
+  ],
+  "#ffffff5c": [
+    "#ffffff5c"
+  ],
+  "#1868db": [
+    "Blue700"
+  ],
+  "#964ac0": [
+    "Purple700"
+  ],
+  "#af59e1": [
+    "Purple600"
+  ],
+  "#e06c00": [
+    "Orange600"
+  ],
+  "#357de8": [
+    "Blue600"
+  ],
+  "#cd519d": [
+    "Magenta600"
+  ],
+  "#01040480": [
+    "#01040480"
+  ],
+  "#0104048f": [
+    "#0104048f"
+  ],
+  "transparent": [
+    "transparent"
+  ]
+}

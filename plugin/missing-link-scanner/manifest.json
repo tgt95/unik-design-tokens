@@ -1,0 +1,16 @@
+{
+  "name": "Missing Link Scanner",
+  "id": "missing-link-scanner.optimized",
+  "api": "1.0.0",
+  "editorType": [
+    "figma"
+  ],
+  "main": "code.js",
+  "ui": "ui.html",
+  "relaunchButtons": [
+    {
+      "command": "scan",
+      "name": "Scan Missing Links"
+    }
+  ]
+}

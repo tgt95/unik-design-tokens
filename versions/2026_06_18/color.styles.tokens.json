@@ -1,0 +1,23 @@
+{
+  "skeleton": {
+    "$type": "gradient",
+    "$value": {
+      "type": "linear",
+      "angle": 89,
+      "stops": [
+        {
+          "color": "{bg.neutral.default}",
+          "position": 0
+        },
+        {
+          "color": "{bg.neutral.subtle.default}",
+          "position": 0.5
+        },
+        {
+          "color": "{bg.neutral.default}",
+          "position": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "wrapper-padding-horizontal": {
+    "$type": "dimension",
+    "$value": "{spacing.sm}"
+  },
+  "sidebar": {
+    "width": {
+      "$type": "dimension",
+      "$value": "248px"
+    }
+  },
+  "home-indicator-iOS": {
+    "$type": "dimension",
+    "$value": "34px"
+  },
+  "statusbar-iOS": {
+    "$type": "dimension",
+    "$value": "47px"
+  },
+  "viewport": {
+    "web": {
+      "width": {
+        "md": {
+          "$type": "dimension",
+          "$value": "1440px"
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "1366px"
+        }
+      },
+      "height": {
+        "md": {
+          "$type": "dimension",
+          "$value": "960px"
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "768px"
+        }
+      }
+    }
+  },
+  "card": {
+    "gap": {
+      "header": {
+        "$type": "dimension",
+        "$value": "{spacing.xs}"
+      },
+      "body": {
+        "$type": "dimension",
+        "$value": "{spacing.sm}"
+      }
+    },
+    "padding": {
+      "horizontal": {
+        "$type": "dimension",
+        "$value": "{spacing.sm}"
+      },
+      "vertical-header": {
+        "$type": "dimension",
+        "$value": "{spacing.2sm}"
+      },
+      "vertical-body": {
+        "$type": "dimension",
+        "$value": "{spacing.sm}"
+      }
+    },
+    "rounded": {
+      "$type": "dimension",
+      "$value": "{radius.2xl}"
+    },
+    "height-header-complex": {
+      "$type": "dimension",
+      "$value": "{size.4xl}",
+      "$description": "Height 64px"
+    }
+  }
+}

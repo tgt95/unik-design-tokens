@@ -1,0 +1,155 @@
+{
+  "font": {
+    "family": {
+      "primary": {
+        "$type": "string",
+        "$value": "{font.family.primary}"
+      },
+      "secondary": {
+        "$type": "string",
+        "$value": "{font.family.secondary}"
+      }
+    },
+    "size": {
+      "base": {
+        "lg": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$description": "Use for: Body, Paragraph, Action (Large)"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "14px"
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "12px"
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "10px"
+        }
+      },
+      "heading": {
+        "1": {
+          "$type": "dimension",
+          "$value": "40px"
+        },
+        "2": {
+          "$type": "dimension",
+          "$value": "32px"
+        },
+        "3": {
+          "$type": "dimension",
+          "$value": "28px"
+        },
+        "4": {
+          "$type": "dimension",
+          "$value": "24px"
+        },
+        "5": {
+          "$type": "dimension",
+          "$value": "20px"
+        },
+        "6": {
+          "$type": "dimension",
+          "$value": "18px"
+        }
+      },
+      "display": {
+        "1": {
+          "$type": "dimension",
+          "$value": "96px"
+        },
+        "2": {
+          "$type": "dimension",
+          "$value": "64px"
+        },
+        "3": {
+          "$type": "dimension",
+          "$value": "48px"
+        }
+      }
+    },
+    "weight": {
+      "regular": {
+        "$type": "dimension",
+        "$value": "400",
+        "$description": "Use for: Body, Paragraph, (Large)"
+      },
+      "medium": {
+        "$type": "dimension",
+        "$value": "500"
+      },
+      "semibold": {
+        "$type": "dimension",
+        "$value": "600"
+      },
+      "bold": {
+        "$type": "dimension",
+        "$value": "700"
+      }
+    }
+  },
+  "line-height": {
+    "base": {
+      "lg": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Use for: Body, Paragraph, Action (Large)"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "16px"
+      }
+    },
+    "heading": {
+      "1": {
+        "$type": "dimension",
+        "$value": "60px"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "48px"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "42px"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "36px"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "30px"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "26px"
+      }
+    },
+    "display": {
+      "1": {
+        "$type": "dimension",
+        "$value": "144px"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "80px"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "72px"
+      }
+    }
+  }
+}

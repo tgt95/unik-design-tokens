@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Missing Link Scanner</title>
+    <style>
+      :root {
+        --bg: #111;
+        --fg: #eaeaea;
+        --muted: #9aa0a6;
+        --accent: #7aa2ff;
+        --error: #ff7676;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 12px;
+        border-bottom: 1px solid #222;
+      }
+      h1 {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .controls {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+      select,
+      button {
+        background: #1a1a1a;
+        color: var(--fg);
+        border: 1px solid #2a2a2a;
+        border-radius: 6px;
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+      button.primary {
+        background: var(--accent);
+        color: #050505;
+        border: none;
+      }
+      main {
+        padding: 8px 10px;
+      }
+      .empty {
+        font-size: 12px;
+        color: var(--muted);
+        text-align: center;
+        padding: 20px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+      th,
+      td {
+        padding: 6px 4px;
+        border-bottom: 1px solid #202020;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        position: sticky;
+        top: 0;
+        background: #0f0f0f;
+        z-index: 1;
+      }
+      .issue {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        border-radius: 999px;
+        border: 1px solid #3a2020;
+        background: #1a0f0f;
+        padding: 2px 6px;
+      }
+      .issue-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background: var(--error);
+      }
+      .badge {
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 6px;
+        border: 1px solid #2a2a2a;
+        background: #1a1a1a;
+        font-size: 11px;
+      }
+      .muted {
+        color: var(--muted);
+        font-size: 11px;
+      }
+      .row {
+        cursor: pointer;
+      }
+      .footer {
+        padding: 8px 10px;
+        border-top: 1px solid #222;
+        font-size: 11px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Missing Link Scanner</h1>
+      <div class="controls">
+        <select id="page-select">
+          <option value="ALL">All pages</option>
+        </select>
+        <button class="primary" id="scan-btn">Scan</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="results"></div>
+    </main>
+
+    <div class="footer">
+      <span id="summary" class="muted">Ready.</span>
+      <button id="refresh-pages" title="Refresh page list">↻ Pages</button>
+    </div>
+
+    <script>
+      var resultsEl = document.getElementById("results");
+      var selectEl = document.getElementById("page-select");
+      var summaryEl = document.getElementById("summary");
+      var scanBtn = document.getElementById("scan-btn");
+      var refreshBtn = document.getElementById("refresh-pages");
+
+      function post(msg) {
+        parent.postMessage({ pluginMessage: msg }, "*");
+      }
+
+      function escapeHtml(str) {
+        if (!str) return "";
+        return String(str).replace(/[&<>"']/g, function (m) {
+          return {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;"
+          }[m];
+        });
+      }
+
+      function setPages(pages) {
+        var html = '<option value="ALL">All pages</option>';
+        for (var i = 0; i < pages.length; i++) {
+          html +=
+            '<option value="' +
+            pages[i].id +
+            '">' +
+            escapeHtml(pages[i].name) +
+            "</option>";
+        }
+        selectEl.innerHTML = html;
+      }
+
+      function renderResults(items) {
+        if (!items || !items.length) {
+          resultsEl.innerHTML =
+            '<div class="empty">✅ No missing components or styles found in this scope.</div>';
+          summaryEl.textContent = "0 issues";
+          return;
+        }
+
+        var rows = "";
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+          var issuesHtml = "";
+          for (var j = 0; j < item.issues.length; j++) {
+            var is = item.issues[j];
+            var label =
+              is.kind === "Missing component"
+                ? "Missing component"
+                : "Missing " + escapeHtml(is.styleType) + " style";
+            issuesHtml +=
+              '<span class="issue"><span class="issue-dot"></span>' +
+              label +
+              "</span> ";
+          }
+
+          rows +=
+            '<tr class="row" data-node="' +
+            item.id +
+            '">' +
+            '<td><span class="badge">' +
+            escapeHtml(item.pageName) +
+            "</span></td>" +
+            "<td><div><strong>" +
+            escapeHtml(item.name) +
+            "</strong></div>" +
+            '<div class="muted">' +
+            escapeHtml(item.type) +
+            "</div></td>" +
+            "<td>" +
+            issuesHtml +
+            "</td>" +
+            '<td><button class="badge" data-node="' +
+            item.id +
+            '">Jump</button></td>' +
+            "</tr>";
+        }
+
+        resultsEl.innerHTML =
+          '<table><thead><tr>' +
+          "<th>Page</th><th>Node</th><th>Issues</th><th>Action</th>" +
+          "</tr></thead>" +
+          "<tbody>" +
+          rows +
+          "</tbody></table>";
+      }
+
+      resultsEl.onclick = function (e) {
+        var closest = e.target.closest ? e.target.closest : null;
+        var btn = closest ? closest.call(e.target, "button[data-node]") : null;
+        var row = closest ? closest.call(e.target, "tr[data-node]") : null;
+        var nodeId = null;
+
+        if (btn && btn.getAttribute) {
+          nodeId = btn.getAttribute("data-node");
+        } else if (row && row.getAttribute) {
+          nodeId = row.getAttribute("data-node");
+        }
+
+        if (nodeId) {
+          post({ type: "navigate", nodeId: nodeId });
+        }
+      };
+
+      scanBtn.onclick = function () {
+        var pageId = selectEl.value || "ALL";
+        summaryEl.textContent = "Scanning...";
+        post({ type: "scan", pageId: pageId });
+      };
+
+      refreshBtn.onclick = function () {
+        post({ type: "request-pages" });
+      };
+
+      window.onmessage = function (event) {
+        var msg = event.data && event.data.pluginMessage;
+        if (!msg) return;
+        if (msg.type === "pages") {
+          setPages(msg.pages || []);
+        }
+        if (msg.type === "results") {
+          renderResults(msg.results || []);
+          var count = msg.results ? msg.results.length : 0;
+          if (typeof msg.ms === "number") {
+            summaryEl.textContent =
+              count + " nodes with issues • " + msg.ms + " ms";
+          } else {
+            summaryEl.textContent = count + " nodes with issues";
+          }
+        }
+      };
+
+      // ask for pages on load (in case code.js hasn't sent yet)
+      post({ type: "request-pages" });
+    </script>
+  </body>
+</html>

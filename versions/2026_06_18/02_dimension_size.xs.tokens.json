@@ -1,0 +1,46 @@
+{
+  "button": {
+    "padding-left": {
+      "$type": "dimension",
+      "$value": "6px"
+    },
+    "padding-right": {
+      "$type": "dimension",
+      "$value": "6px"
+    },
+    "height": {
+      "$type": "dimension",
+      "$value": "{size.md}"
+    },
+    "icon": {
+      "size": {
+        "$type": "dimension",
+        "$value": "{size.4sm}"
+      }
+    },
+    "gap": {
+      "$type": "dimension",
+      "$value": "{spacing.4xs}"
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.sm}"
+    },
+    "radius-focus-ring": {
+      "$type": "dimension",
+      "$value": "7px"
+    },
+    "font-size": {
+      "$type": "dimension",
+      "$value": "{font.size.base.sm}"
+    },
+    "line-height": {
+      "$type": "dimension",
+      "$value": "{line-height.base.sm}"
+    },
+    "font-weight": {
+      "$type": "dimension",
+      "$value": "{font.weight.semibold}"
+    }
+  }
+}
